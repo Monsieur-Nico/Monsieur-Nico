@@ -11,7 +11,7 @@ _I hope the following information will help you get to know more about my skills
 
 ### Currently learning
 
-[VueJS](https://vuejs.org/)
+- [VueJS](https://vuejs.org/)
 
 ### How to reach me:
 
