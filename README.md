@@ -16,9 +16,10 @@ _I hope the following information will help you get to know more about my skills
 ### How to reach me:
 
 - Preferred contact platform is Discord or LinkedIn (Click [here](https://www.linkedin.com/in/monsieur-nico/) or on my name above!).
-- ![Twitter](https://img.shields.io/badge/monsieur_nico-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)
-  ![Discord](https://img.shields.io/badge/Monsieur%20Nico%231371-%237289DA.svg?style=for-the-badge&logo=discord&logoColor=white)
-  ![Instagram](https://img.shields.io/badge/nicolas.alkhoury-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)
+
+[![Twitter](https://img.shields.io/badge/monsieur_nico-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/monsieur_nico)
+[![Discord](https://img.shields.io/badge/Monsieur%20Nico%231371-%237289DA.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discordapp.com/users/718423239071760384)
+[![Instagram](https://img.shields.io/badge/nicolas.alkhoury-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/nicolas.alkhoury/)
 
 ### Languages
 
