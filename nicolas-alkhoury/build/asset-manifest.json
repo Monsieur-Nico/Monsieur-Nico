@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Monsieur-Nico/static/css/main.073c9b0a.css",
+    "main.js": "/Monsieur-Nico/static/js/main.ea171f23.js",
+    "static/js/787.422029c2.chunk.js": "/Monsieur-Nico/static/js/787.422029c2.chunk.js",
+    "index.html": "/Monsieur-Nico/index.html",
+    "main.073c9b0a.css.map": "/Monsieur-Nico/static/css/main.073c9b0a.css.map",
+    "main.ea171f23.js.map": "/Monsieur-Nico/static/js/main.ea171f23.js.map",
+    "787.422029c2.chunk.js.map": "/Monsieur-Nico/static/js/787.422029c2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.ea171f23.js"
+  ]
+}
