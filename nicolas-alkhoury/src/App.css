@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+.Protfilio {
+  display: flex;
+  justify-content: center;
+  background: #141e30;
+  background: -webkit-linear-gradient(to right, #243b55, #141e30);
+  background: linear-gradient(to right, #243b55, #141e30);
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

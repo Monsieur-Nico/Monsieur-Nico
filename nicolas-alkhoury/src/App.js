@@ -1,11 +1,13 @@
+// Components
+import Header from './components/Header';
+
+// Style
 import './App.css';
 
 function App() {
   return (
     <div className="Protfilio">
-      <header className="Protfilio-header">
-        <h1>Nicolas Alkhoury</h1>
-      </header>
+      <Header />
     </div>
   );
 }
