@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Monsieur-Nico/static/css/main.2290fef6.css",
-    "main.js": "/Monsieur-Nico/static/js/main.18535cc0.js",
-    "static/js/787.422029c2.chunk.js": "/Monsieur-Nico/static/js/787.422029c2.chunk.js",
-    "index.html": "/Monsieur-Nico/index.html",
-    "main.2290fef6.css.map": "/Monsieur-Nico/static/css/main.2290fef6.css.map",
-    "main.18535cc0.js.map": "/Monsieur-Nico/static/js/main.18535cc0.js.map",
-    "787.422029c2.chunk.js.map": "/Monsieur-Nico/static/js/787.422029c2.chunk.js.map"
+    "main.css": "/static/css/main.ee865ede.css",
+    "main.js": "/static/js/main.670fc8b2.js",
+    "static/js/787.422029c2.chunk.js": "/static/js/787.422029c2.chunk.js",
+    "index.html": "/index.html",
+    "main.ee865ede.css.map": "/static/css/main.ee865ede.css.map",
+    "main.670fc8b2.js.map": "/static/js/main.670fc8b2.js.map",
+    "787.422029c2.chunk.js.map": "/static/js/787.422029c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2290fef6.css",
-    "static/js/main.18535cc0.js"
+    "static/css/main.ee865ede.css",
+    "static/js/main.670fc8b2.js"
   ]
 }
