@@ -1,0 +1,16 @@
+.Protfilio-header {
+  height: 17vh;
+  width: 95%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid red;
+
+  .header-title {
+    color: rgb(148, 127, 87);
+    font-family: "Fira Sans", sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    text-shadow: 5px 4px 9px rgba(0, 0, 0, 0.71);
+  }
+}
