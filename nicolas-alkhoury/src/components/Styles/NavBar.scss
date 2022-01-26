@@ -1,0 +1,35 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55%;
+  height: 110%;
+  background-color: rgba(255, 255, 255, 0.4);
+  opacity: 10%;
+  border-radius: 10px;
+
+  .nav-item {
+    display: flex;
+    justify-content: center;
+    padding: 1px;
+    align-items: center;
+    min-width: 15%;
+    height: 5vh;
+    border-radius: 10px;
+    font-size: 1.5em;
+  }
+
+  .nav-item:hover {
+    border: 1px solid rgba(255, 255, 255);
+    border-radius: 10px;
+    padding: 0px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+}
+
+.navbar:hover {
+  opacity: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
