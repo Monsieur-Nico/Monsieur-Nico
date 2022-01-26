@@ -24,8 +24,8 @@ export default function Body(props) {
         </div>
         <div className="body-item">
           <p className="about-me">
-            I am an understanding, patient person with a desire to know, work
-            and communicate with others.
+            An understanding, patient person with a desire to know, work and
+            communicate with others.
             <br />I have gained a lot of experience not only in development,
             also in life, but still... I want more.
           </p>
