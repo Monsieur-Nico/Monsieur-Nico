@@ -11,7 +11,6 @@
   .footer-item {
     display: flex;
     justify-content: center;
-    padding: 1px;
     align-items: center;
     min-width: 17%;
     height: 5vh;
@@ -19,6 +18,7 @@
     border-top-right-radius: 10px;
     font-size: 1.5em;
     color: black;
+    border: 1px solid transparent;
   }
 
   .footer-item:hover {
@@ -26,10 +26,10 @@
     box-shadow: 0px 0px 30px 10px rgba(107, 176, 255, 0.6);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    padding: 0px;
     background-color: transparent;
     color: rgb(255, 255, 255);
     cursor: pointer;
+    transition: 1s;
   }
 }
 
