@@ -22,22 +22,21 @@
         height: 250px;
         border-radius: 50%;
         opacity: 75%;
-        padding: 1px;
+        border: 1px solid transparent;
         box-shadow: 5px 4px 9px rgba(0, 0, 0, 0.71);
       }
 
       .body-pic:hover {
         opacity: 100%;
-        padding: 0px;
         border: 1px solid rgb(255, 255, 255, 0.4);
         box-shadow: 0px 0px 30px 10px rgba(107, 176, 255, 0.6);
+        transition: 0.5s;
       }
     }
 
     .about-me {
       height: 50%;
       width: 75%;
-      padding: 2px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -47,13 +46,14 @@
       text-align: center;
       text-shadow: 5px 4px 9px rgba(0, 0, 0, 0.71);
       color: #fff;
+      border: 1px solid transparent;
     }
 
     .about-me:hover {
-      padding: 1px;
       border: 1px solid rgb(255, 255, 255, 0.4);
       border-radius: 10px;
       background-color: rgba(255, 255, 255, 0.1);
+      transition: 0.5s;
     }
   }
 }
