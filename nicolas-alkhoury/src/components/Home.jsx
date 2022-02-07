@@ -1,6 +1,3 @@
-// Components
-import Footer from "./Footer";
-
 // Style
 import "./Styles/Body.scss";
 
@@ -38,7 +35,6 @@ export default function Body(props) {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 }
