@@ -5,9 +5,15 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+// Style
+import './index.css';
+
+// Components
+import App from './App';
+import Projects from './components/Projects';
+
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
@@ -15,6 +21,7 @@ ReactDOM.render(
     <Router>
       <Routes>
         <Route path="/" element={<App />} />
+        <Route path="/Projects" element={<Projects />} />
       </Routes>
     </Router>
   </React.StrictMode>,
