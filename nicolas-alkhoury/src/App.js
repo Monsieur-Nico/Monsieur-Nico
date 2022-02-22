@@ -4,7 +4,7 @@ import Home from './components/Home';
 import Footer from "./components/Footer";
 
 // Style
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
