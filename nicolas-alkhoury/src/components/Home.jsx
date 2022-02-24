@@ -25,14 +25,40 @@ export default function Body(props) {
           </p>
         </div>
         <section className="fee">
-          <div className="fee-title">
-            <h1>Entry Fee</h1>
-          </div>
-          <div className="fee-description">
-            <p className="fee-description-text">
-              Please process the entry fee to explore my portfolio.
-            </p>
-          </div>
+          <section className="fee-process">
+            <div className="fee-title">
+              <h1>Entry Fee</h1>
+            </div>
+            <div classname="process-info">
+              <input
+                type="text"
+                className="info-firstName"
+                name="firstName"
+              ></input>
+              <input
+                type="text"
+                className="info-LastName"
+                name="lastName"
+              ></input>
+              <input type="email" className="info-email" name="email"></input>
+            </div>
+          </section>
+          <section className="fee-information">
+            <div className="info-text">
+              <span>Please pay entry fee with an</span>
+              <span
+                style={{
+                  color: "#c89a3c",
+                  fontWeight: "bolder",
+                  fontSize: "27px",
+                }}
+              >
+                {" "}
+                advice{" "}
+              </span>
+              <span>to expolore my portfolio.</span>
+            </div>
+          </section>
         </section>
       </section>
     </>
