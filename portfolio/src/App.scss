@@ -1,0 +1,6 @@
+// Import variables
+@use "./Components/Style/palette" as palette;
+
+body {
+  background-color: palette.$dim-gray;
+}
