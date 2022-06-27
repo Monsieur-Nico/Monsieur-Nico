@@ -2,5 +2,6 @@
 @use "./Components/Style/Variables/palette" as palette;
 
 body {
-  background-color: palette.$dim-gray;
+  background-image: url(../public/Hero_Section_Image.jpeg);
+  background-size: cover;
 }
