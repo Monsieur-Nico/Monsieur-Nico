@@ -19,6 +19,8 @@ function Hero() {
             className="heroPicture"
           />
         </div>
+        <p className="heroName">Nicolas Alkhoury</p>
+        <p className="heroTitle">Full-Stack Developer</p>
       </section>
     </Fragment>
   );
