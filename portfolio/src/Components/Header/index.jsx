@@ -1,4 +1,5 @@
 // Components
+import Menu from "./_menu";
 
 // Style
 import "../Style/Header.scss";
@@ -12,6 +13,7 @@ function Header() {
       <div className="logo">
         <p>Nicolas</p>
       </div>
+      <Menu />
     </section>
   );
 }
