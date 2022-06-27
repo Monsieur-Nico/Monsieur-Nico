@@ -8,30 +8,36 @@
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  height: 25%;
+  height: 10vh;
   background-color: rgba(0, 0, 0, 0.65);
   box-shadow: 0px 10px 15px 10px rgba(51, 78, 88, 0.81);
 
-  .logo {
+  .logoSection {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
     padding-left: 0.5rem;
-    color: palette.$melon;
-    font-family: "Dancing Script", cursive;
-    font-weight: 600;
-    font-size: 1.5em;
+
+    .logo {
+      width: 23%;
+      padding-top: 0.25rem;
+    }
   }
 
   .dropMenu {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 30%;
 
     .dropButton {
+      width: 70%;
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 0.35rem;
       border: none;
-      margin-right: 0.5rem;
       border-radius: 0.25rem;
       background-color: palette.$melon;
     }
