@@ -1,5 +1,5 @@
 // Components
-import Home from "./Components/Home/index";
+import Home from "./Components/Home/";
 
 // Style
 import "./App.scss";
