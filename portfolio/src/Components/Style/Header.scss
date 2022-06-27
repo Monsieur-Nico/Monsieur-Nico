@@ -9,13 +9,12 @@
   align-items: center;
   width: 100vw;
   height: 25%;
-  background-color: rgba(0, 0, 0, 0.5);
-  background-size: auto;
-  box-shadow: 0px 10px 15px 0px rgb(166 152 136);
+  background-color: rgba(0, 0, 0, 0.65);
+  box-shadow: 0px 10px 15px 10px rgba(51, 78, 88, 0.81);
 
   .logo {
     padding-left: 0.5rem;
-    color: palette.$grullo;
+    color: palette.$melon;
     font-family: "Dancing Script", cursive;
     font-weight: 600;
     font-size: 1.5em;
@@ -34,7 +33,7 @@
       border: none;
       margin-right: 0.5rem;
       border-radius: 0.25rem;
-      background-color: palette.$grullo;
+      background-color: palette.$melon;
     }
   }
 }
