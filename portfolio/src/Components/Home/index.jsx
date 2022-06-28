@@ -1,6 +1,7 @@
 // Components
 import Hero from "./_hero";
 import Skills from "./_skills";
+import About from "./_about";
 
 // Style
 import "../Style/Home/Home.scss";
@@ -13,6 +14,7 @@ function Home() {
     <Fragment>
       <section className="mainContainer">
         <Hero />
+        <About />
         <Skills />
       </section>
     </Fragment>
