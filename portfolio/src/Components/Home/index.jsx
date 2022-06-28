@@ -1,8 +1,9 @@
 // Components
 import Hero from "./_hero";
+import Skills from "./_skills";
 
 // Style
-import "../Style/Home.scss";
+import "../Style/Home/Home.scss";
 
 // Libraries
 import { Fragment } from "react";
@@ -12,6 +13,7 @@ function Home() {
     <Fragment>
       <section className="mainContainer">
         <Hero />
+        <Skills />
       </section>
     </Fragment>
   );

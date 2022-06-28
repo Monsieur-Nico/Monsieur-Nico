@@ -2,8 +2,8 @@
 import Nav from "./_navbar";
 
 // Style
-import "../Style/Header.scss";
-import "../Style/HeaderPC.scss";
+import "../Style/Header/Header.scss";
+import "../Style/Header/HeaderPC.scss";
 
 // Libraries
 // import { Fragment } from "react";
