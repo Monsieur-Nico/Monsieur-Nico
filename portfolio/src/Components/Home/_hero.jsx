@@ -1,5 +1,5 @@
 // Components
-import pfp from "./pfp.jpeg";
+import pfp from "../../Assets/pfp.jpeg";
 
 // Style
 

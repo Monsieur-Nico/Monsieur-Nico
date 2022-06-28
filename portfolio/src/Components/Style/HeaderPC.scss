@@ -2,14 +2,14 @@
 @use "./Variables/testingBorders" as testBorders;
 @use "./Variables/palette" as palette;
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 1600px) {
   .Header {
     margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    height: 9.75vh;
+    height: 10.25vh;
     background-color: rgba(0, 0, 0, 0.65);
     box-shadow: 0px 10px 15px 10px rgba(51, 78, 88, 0.81);
 
@@ -29,62 +29,42 @@
         padding-left: 0.5rem;
 
         .logo {
-          width: 60px;
-          padding-top: 0.25rem;
+          width: 75px;
         }
       }
     }
   }
 }
 
-@media only screen and (max-width: 992px) {
-  .navbar-toggler {
-    margin-right: 0.5rem;
-    border: none;
-
-    .navbar-icon {
-      color: palette.$melon;
-      font-size: 2rem;
-    }
-  }
-
-  .navbar-toggler:active {
-    border: none;
-
-    .navbar-icon {
-      color: palette.$dim-gray;
-      font-size: 2rem;
-    }
-  }
-
-  .navbar-toggler:focus {
-    border: none;
-
-    .navbar-icon {
-      color: palette.$dim-gray;
-      font-size: 2rem;
-    }
-  }
-  .collapse {
-    transition: 0.5s;
-    z-index: 1;
-    top: 0;
+@media only screen and (min-width: 992px) and (max-width: 1600px) {
+  .navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
 
     .navbar-nav {
-      background-color: palette.$dim-gray;
+      background-color: transparent;
       transition: 0.25s;
-      padding-left: 1.5rem;
+      margin-right: 1.5rem;
 
       .nav-item {
+        padding: 0.5rem;
+
         .nav-link {
           color: palette.$grullo;
           font-weight: 300;
         }
+      }
 
-        .nav-link:hover {
-          color: palette.$melon;
+      .nav-item:hover {
+        background-color: palette.$grullo;
+        transition: 0.5s;
+        border-radius: 16px;
+
+        .nav-link {
+          color: palette.$charcoal;
           font-weight: 300;
-          transition: 0.25s;
+          transition: 0.5s;
         }
       }
     }
