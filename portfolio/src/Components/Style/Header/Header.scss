@@ -1,6 +1,6 @@
 // Imports
-@use "./Variables/testingBorders" as testBorders;
-@use "./Variables/palette" as palette;
+@use "../Variables/testingBorders" as testBorders;
+@use "../Variables/palette" as palette;
 
 @media only screen and (max-width: 767px) {
   .Header {
