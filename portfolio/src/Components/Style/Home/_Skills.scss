@@ -47,6 +47,12 @@
       padding: 2px;
       width: sizes.$skills-item-width;
 
+      .Markdown {
+        background-color: #fff;
+        width: 100%;
+        border-radius: 25%;
+      }
+
       .JS {
         width: 100%;
         border-radius: 25%;
