@@ -1,4 +1,5 @@
 @use "../../Variables/palette" as palette;
+@use "../../Variables/sizes" as sizes;
 
 .skills {
   width: 100%;
@@ -6,6 +7,23 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  .skills-title-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    color: palette.$charcoal;
+    width: 90%;
+    font-size: sizes.$title-section-font-size;
+    margin-left: sizes.$title-section-margin-left;
+
+    .skills-title {
+      text-align: center;
+      margin: 0;
+      margin-left: 5px;
+    }
+  }
 
   .skills-list {
     width: 90%;
@@ -17,17 +35,17 @@
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
+    border: 1px solid transparent;
+    border-radius: sizes.$skills-list-border-radius;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
 
     .skills-item {
       display: flex;
       justify-content: center;
       align-items: center;
-      border: 1px solid palette.$melon;
-      border-radius: 25%;
       padding: 2px;
-      margin-right: 3px;
-      margin-bottom: 5px;
-      width: 35px;
+      width: sizes.$skills-item-width;
 
       .JS {
         width: 100%;
@@ -49,5 +67,10 @@
         border-radius: 25%;
       }
     }
+  }
+
+  .skills-list:hover {
+    border: 1px solid palette.$melon;
+    background-color: rgba(0, 0, 0, 0.1);
   }
 }
