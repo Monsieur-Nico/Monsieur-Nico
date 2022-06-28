@@ -1,0 +1,10 @@
+@use "./palette" as palette;
+
+$title-section-margin-left: 20px;
+$title-margin-left: 5px;
+$title-section-font-size: 1.5em;
+$title-section-width: 1.5em;
+$skills-list-border: 1px solid transparent;
+$skills-list-border-radius: 15px;
+$skills-list-border-hover: 1px solid palette.$melon;
+$skills-item-width: 35px;
