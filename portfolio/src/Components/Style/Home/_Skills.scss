@@ -72,5 +72,6 @@
   .skills-list:hover {
     border: 1px solid palette.$melon;
     background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
   }
 }
