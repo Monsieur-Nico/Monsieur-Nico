@@ -22,7 +22,10 @@ export default function Skills() {
   return (
     <Fragment>
       <section className="skills">
-        <h4 className="skills-title">Skills</h4>
+        <div className="skills-title-section">
+          <ion-icon name="stats-chart-outline"></ion-icon>
+          <h4 className="skills-title">Skills</h4>
+        </div>
         <ul className="skills-list">
           <li className="skills-item">
             <img className="Markdown" src={Markdown} alt="Markdown" />
