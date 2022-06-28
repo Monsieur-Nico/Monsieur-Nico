@@ -13,7 +13,7 @@ import PostgreSQL from "../../Assets/Icons/postgresql.svg";
 import Ruby from "../../Assets/Icons/ruby.svg";
 
 // Style
-import "../Style/Home/Skills/Skills.scss";
+import "../Style/Home/_Skills.scss";
 
 // Libraries
 import { Fragment } from "react";
