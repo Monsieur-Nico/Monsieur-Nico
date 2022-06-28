@@ -1,0 +1,53 @@
+@use "../../Variables/palette" as palette;
+
+.skills {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .skills-list {
+    width: 90%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+
+    .skills-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid palette.$melon;
+      border-radius: 25%;
+      padding: 2px;
+      margin-right: 3px;
+      margin-bottom: 5px;
+      width: 35px;
+
+      .JS {
+        width: 100%;
+        border-radius: 25%;
+      }
+
+      .TS {
+        width: 100%;
+        border-radius: 25%;
+      }
+
+      .PostgreSQL {
+        width: 100%;
+        border-radius: 25%;
+      }
+
+      .Ruby {
+        width: 100%;
+        border-radius: 25%;
+      }
+    }
+  }
+}
