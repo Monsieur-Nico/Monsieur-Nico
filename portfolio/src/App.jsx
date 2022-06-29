@@ -1,6 +1,7 @@
 // Components
 import Header from "./Components/Header";
 import Home from "./Components/Home/";
+import Footer from "./Components/Footer";
 
 // Style
 import "./App.scss";
@@ -13,6 +14,7 @@ function App() {
     <Fragment>
       <Header />
       <Home />
+      <Footer />
     </Fragment>
   );
 }
