@@ -1,5 +1,8 @@
 // Components
-import interview from "../../Assets/Projects/Interview.png";
+import interview from "../../Assets/Projects/Interview.svg";
+import textConvert from "../../Assets/Projects/textConvert.svg";
+import devsden from "../../Assets/Projects/devsden.svg";
+import UberLabs from "../../Assets/Projects/UberLabs.svg";
 
 // Style
 import "../Style/Home/_Projects.scss";
@@ -16,25 +19,24 @@ export default function Projects() {
           <h4 className="projects-title">Projects</h4>
         </section>
         <ul className="projects-list">
+          <a href="https://github.com/Monsieur-Nico/Interview-Scheduler">
+            <li
+              className="projects-item"
+              style={{ backgroundImage: `url(${interview})` }}
+            ></li>
+          </a>
           <li
             className="projects-item"
-            style={{
-              backgroundImage: `url(${interview})`,
-            }}
-          >
-            <section className="item-footer">
-              <section className="footer-info">
-                <h6 className="footer-title">Interview Scheduler</h6>
-                <p className="footer-bio">
-                  A project I completed during my experience at Lighthouse Labs
-                  to allow applicants to book an interview appointment with
-                  recruiters.
-                </p>
-              </section>
-            </section>
-          </li>
-          <li className="projects-item"></li>
-          <li className="projects-item"></li>
+            style={{ backgroundImage: `url(${textConvert})` }}
+          ></li>
+          <li
+            className="projects-item"
+            style={{ backgroundImage: `url(${devsden})` }}
+          ></li>
+          <li
+            className="projects-item"
+            style={{ backgroundImage: `url(${UberLabs})` }}
+          ></li>
         </ul>
       </section>
     </Fragment>
