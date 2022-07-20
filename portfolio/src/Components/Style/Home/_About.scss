@@ -38,6 +38,7 @@
     border: 1px solid transparent;
     border-radius: sizes.$skills-list-border-radius;
     padding: 5px;
+    padding-left: 20px;
     background-color: rgba(0, 0, 0, 0.3);
     color: palette.$grullo;
     margin-bottom: 10px;
@@ -45,6 +46,7 @@
 
     .about-bio {
       padding: 2px;
+      margin: 0;
     }
   }
 
