@@ -25,18 +25,24 @@ export default function Projects() {
               style={{ backgroundImage: `url(${interview})` }}
             ></li>
           </a>
-          <li
-            className="projects-item"
-            style={{ backgroundImage: `url(${textConvert})` }}
-          ></li>
-          <li
-            className="projects-item"
-            style={{ backgroundImage: `url(${devsden})` }}
-          ></li>
-          <li
-            className="projects-item"
-            style={{ backgroundImage: `url(${UberLabs})` }}
-          ></li>
+          <a href="https://github.com/Monsieur-Nico/textConvert">
+            <li
+              className="projects-item"
+              style={{ backgroundImage: `url(${textConvert})` }}
+            ></li>
+          </a>
+          <a href="https://github.com/Dev-s-Den/Devs-Den">
+            <li
+              className="projects-item"
+              style={{ backgroundImage: `url(${devsden})` }}
+            ></li>
+          </a>
+          <a href="https://github.com/kencruz/uber-labs">
+            <li
+              className="projects-item"
+              style={{ backgroundImage: `url(${UberLabs})` }}
+            ></li>
+          </a>
         </ul>
       </section>
     </Fragment>
