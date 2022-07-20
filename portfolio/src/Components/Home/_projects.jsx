@@ -3,6 +3,7 @@ import interview from "../../Assets/Projects/Interview.svg";
 import textConvert from "../../Assets/Projects/textConvert.svg";
 import devsden from "../../Assets/Projects/devsden.svg";
 import UberLabs from "../../Assets/Projects/UberLabs.svg";
+import RoKCommander from "../../Assets/Projects/RoKCommander.svg";
 
 // Style
 import "../Style/Home/_Projects.scss";
@@ -19,6 +20,12 @@ export default function Projects() {
           <h4 className="projects-title">Projects</h4>
         </section>
         <ul className="projects-list">
+          <a href="https://github.com/Monsieur-Nico/RoK-Commander">
+            <li
+              className="projects-item"
+              style={{ backgroundImage: `url(${RoKCommander})` }}
+            ></li>
+          </a>
           <a href="https://github.com/Monsieur-Nico/Interview-Scheduler">
             <li
               className="projects-item"
