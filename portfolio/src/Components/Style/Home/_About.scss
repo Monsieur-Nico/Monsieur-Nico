@@ -41,6 +41,7 @@
     background-color: rgba(0, 0, 0, 0.3);
     color: palette.$grullo;
     margin-bottom: 10px;
+    transition: 0.5s;
 
     .about-bio {
       padding: 2px;
@@ -49,7 +50,9 @@
 
   .about-bio-section:hover {
     border: 1px solid palette.$melon;
+    color: rgba(0, 0, 0, 0.6);
     background-color: rgba(0, 0, 0, 0.1);
     transition: 0.5s;
+    transform: scale(1.1);
   }
 }
