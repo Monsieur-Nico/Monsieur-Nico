@@ -7,4 +7,40 @@
   margin-top: 25px;
   background-color: rgb(65, 65, 65);
   box-shadow: 0px -10px 15px 1px rgb(163, 173, 177);
+  font-size: 2em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    color: #fff;
+  }
+
+  .twitter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    color: #1d96e8;
+  }
+
+  .discord {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    color: #6f84d1;
+  }
+
+  .stackoverflow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    color: #ee7c24;
+  }
 }
