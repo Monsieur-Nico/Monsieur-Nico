@@ -1,0 +1,97 @@
+@use "../Variables/palette" as palette;
+@use "../Variables/sizes" as sizes;
+
+.education {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .education-title-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    color: palette.$charcoal;
+    width: 90%;
+    font-size: sizes.$title-section-font-size;
+    margin-left: sizes.$title-section-margin-left;
+
+    .education-title {
+      text-align: center;
+      margin: 0;
+      margin-left: 5px;
+    }
+  }
+
+  .education-list {
+    width: 90%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    padding: 3px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+    transition: 0.5s;
+    color: palette.$grullo;
+
+    .education-item {
+      width: 115px;
+      height: 115px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 2px;
+      margin-top: 3px;
+      margin-bottom: 3px;
+      border-radius: 7.5px;
+      border: 1px solid transparent;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      background-color: rgba(0, 0, 0, 0.2);
+      transition: 0.5s;
+      cursor: pointer;
+    }
+  }
+
+  .education-list:hover {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid palette.$melon;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    transform: scale(1.1);
+
+    // .education-item:hover {
+    //   transform: scale(5);
+    //   transition: 0.5s;
+    //   border: 1px solid palette.$melon;
+    // }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1600px) {
+  .education-list:hover {
+    border: 1px solid palette.$melon;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    transform: scale(1.1);
+
+    .education-item:hover {
+      transform: scale(5);
+      transition: 0.5s;
+      border: 1px solid palette.$melon;
+    }
+  }
+}

@@ -1,6 +1,7 @@
 // Components
 import Hero from "./_hero";
 import Resume from "./_resume";
+import Education from "./_education";
 import Skills from "./_skills";
 import About from "./_about";
 import Projects from "./_projects";
@@ -18,6 +19,7 @@ function Home() {
         <Hero />
         <Resume />
         <About />
+        <Education />
         <Skills />
         <Projects />
       </section>

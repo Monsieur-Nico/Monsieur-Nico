@@ -16,7 +16,7 @@ export default function Projects() {
     <Fragment>
       <section className="projects">
         <section className="projects-title-section">
-          <ion-icon name="layers-outline"></ion-icon>{" "}
+          <ion-icon name="layers-outline"></ion-icon>
           <h4 className="projects-title">Projects</h4>
         </section>
         <ul className="projects-list">
