@@ -23,6 +23,10 @@
       align-items: center;
       flex-direction: row;
 
+      .navbar-toggler {
+        display: none;
+      }
+
       .logoSection {
         width: 50%;
         padding-left: 0.5rem;
@@ -42,6 +46,7 @@
     background-color: transparent;
 
     .navbar-nav {
+      display: none;
       background-color: transparent;
       transition: 0.25s;
       margin-right: 1.5rem;

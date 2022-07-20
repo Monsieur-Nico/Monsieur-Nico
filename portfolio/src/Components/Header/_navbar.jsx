@@ -4,7 +4,6 @@ import Logo from "../../Assets/Nicolas Alkhoury.svg";
 // Style
 
 // Libraries
-import { Fragment } from "react";
 
 function Nav() {
   return (
@@ -34,18 +33,18 @@ function Nav() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Features
+              <a className="nav-link" href="#about">
+                About
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Pricing
+              <a className="nav-link" href="#skills">
+                Skills
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link disabled" href="#">
-                Disabled
+              <a className="nav-link disabled" href="#projects">
+                Projects
               </a>
             </li>
           </ul>
