@@ -66,23 +66,19 @@
   }
 
   .education-list:hover {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border: 1px solid palette.$melon;
     background-color: rgba(0, 0, 0, 0.1);
     transition: 0.5s;
     transform: scale(1.1);
-
-    // .education-item:hover {
-    //   transform: scale(5);
-    //   transition: 0.5s;
-    //   border: 1px solid palette.$melon;
-    // }
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1600px) {
   .education-list:hover {
+    margin-top: 15px;
+    margin-bottom: 15px;
     border: 1px solid palette.$melon;
     background-color: rgba(0, 0, 0, 0.1);
     transition: 0.5s;
