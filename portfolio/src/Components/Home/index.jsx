@@ -1,6 +1,6 @@
 // Components
 import Hero from "./_hero";
-import Resume from "./_resume";
+import Buttons from "./_heroButtons";
 import Education from "./_education";
 import Skills from "./_skills";
 import About from "./_about";
@@ -17,7 +17,7 @@ function Home() {
     <Fragment>
       <section className="mainContainer">
         <Hero />
-        <Resume />
+        <Buttons />
         <About />
         <Education />
         <Skills />

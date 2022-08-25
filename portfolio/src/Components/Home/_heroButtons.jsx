@@ -3,10 +3,10 @@ import { Fragment } from "react";
 import resume from "../../Assets/Nicolas Alkhoury Resume.pdf";
 
 // Style
-import "../Style/Home/_Resume.scss";
+import "../Style/Home/_HeroButtons.scss";
 // Libraries
 
-export default function Resume() {
+export default function Buttons() {
   return (
     <Fragment>
       <section className="hero-resume">
