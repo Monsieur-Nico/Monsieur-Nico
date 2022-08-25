@@ -5,6 +5,7 @@ import Education from "./_education";
 import Skills from "./_skills";
 import About from "./_about";
 import Projects from "./_projects";
+import Contact from "./_contact";
 
 // Style
 import "../Style/Home/Home.scss";
@@ -16,6 +17,7 @@ function Home() {
   return (
     <Fragment>
       <section className="mainContainer">
+        <Contact />
         <Hero />
         <Buttons />
         <About />
