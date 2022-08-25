@@ -1,5 +1,5 @@
 // Components
-import Header from "./Components/Header";
+// import Header from "./Components/Header";
 import Home from "./Components/Home/";
 import Footer from "./Components/Footer";
 
@@ -12,7 +12,7 @@ import { Fragment } from "react";
 function App() {
   return (
     <Fragment>
-      <Header />
+      {/* <Header /> */}
       <Home />
       <Footer />
     </Fragment>

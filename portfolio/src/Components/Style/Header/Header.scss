@@ -11,6 +11,8 @@
     height: 9.75vh;
     background-color: rgb(65, 65, 65);
     box-shadow: 0px 10px 15px 10px rgba(51, 78, 88, 0.81);
+    color: palette.$melon;
+    font-size: 25px;
 
     .navbar {
       width: 100%;
@@ -23,72 +25,31 @@
       align-items: center;
       flex-direction: row;
 
-      .navbar-toggler {
-        display: none;
-      }
-
       .logoSection {
-        width: 50%;
-        padding-left: 0.5rem;
+        width: 25%;
+        margin-left: 0.5rem;
 
         .logo {
           width: 60px;
-          padding-top: 0.25rem;
+          margin-top: 0.25rem;
         }
       }
-    }
-  }
-}
 
-@media only screen and (max-width: 992px) {
-  .navbar-toggler {
-    display: none;
-    margin-right: 0.5rem;
-    border: none;
+      .email-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        text-align: center;
+        margin-right: 0.5rem;
 
-    .navbar-icon {
-      color: palette.$melon;
-      font-size: 2rem;
-    }
-  }
-
-  .navbar-toggler:active {
-    border: none;
-
-    .navbar-icon {
-      color: palette.$dim-gray;
-      font-size: 2rem;
-    }
-  }
-
-  .navbar-toggler:focus {
-    border: none;
-
-    .navbar-icon {
-      color: palette.$dim-gray;
-      font-size: 2rem;
-    }
-  }
-  .collapse {
-    transition: 0.5s;
-    z-index: 1;
-    top: 0;
-
-    .navbar-nav {
-      background-color: palette.$dim-gray;
-      transition: 0.25s;
-      padding-left: 1.5rem;
-
-      .nav-item {
-        .nav-link {
-          color: palette.$grullo;
-          font-weight: 300;
+        .email-icon {
+          text-decoration: none;
+          color: inherit;
         }
 
-        .nav-link:hover {
-          color: palette.$melon;
-          font-weight: 300;
-          transition: 0.25s;
+        .email-text {
+          display: none;
         }
       }
     }

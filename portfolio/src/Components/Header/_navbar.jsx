@@ -8,47 +8,16 @@ import Logo from "../../Assets/Nicolas Alkhoury.svg";
 function Nav() {
   return (
     <section className="navbar">
-      <nav className="navbar navbar-expand-lg navbar-light">
+      <nav className="navbar">
         <div className="logoSection">
           <img src={Logo} alt="logo" className="logo" />
         </div>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <div className="navbar-icon">
-            <ion-icon name="menu-outline"></ion-icon>
-          </div>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item active">
-              <a className="nav-link" href="#">
-                Home <span className="sr-only">(current)</span>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#about">
-                About
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#skills">
-                Skills
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link disabled" href="#projects">
-                Projects
-              </a>
-            </li>
-          </ul>
-        </div>
+        <section className="email-section">
+          <a href="mailto:nicolaskhoury98@gmail.com" className="email-icon">
+            <ion-icon name="mail-outline"></ion-icon>
+          </a>
+          <p className="email-text">nicolaskhoury98@gmail.com</p>
+        </section>
       </nav>
     </section>
   );
