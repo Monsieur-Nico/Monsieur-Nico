@@ -87,11 +87,6 @@ TypeScript · PostgreSQL · React · TailwindCSS · Node.js · Git · VS Code ·
 
 ---
 
-<h2 align="center" style="background: linear-gradient(90deg, #5A189A, #9D4EDD); color: white; padding: 0.6rem 0; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);">🌗 Dark/Light Mode Friendly?</h2>
-Yes! All badges and stats use styles that adapt well to GitHub’s themes.
-
----
-
 <p align="center"><i>“Build boldly. Learn loudly. Launch often.”</i></p>
 
 <p align="center">
