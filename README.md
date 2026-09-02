@@ -89,7 +89,7 @@ See more on my <a href="https://www.nicoscript.com/#projects">portfolio</a>.
 <h2 align="center" style="background: linear-gradient(90deg, #5A189A, #9D4EDD); color: white; padding: 0.6rem 0; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);">📊 GitHub Stats</h2>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Monsieur-Nico&show_icons=true&theme=radical&hide_title=true&count_private=true" />
+  <img src="https://github-stats-extended.vercel.app/api?username=Monsieur-Nico&show_icons=true&theme=radical&hide_title=true&count_private=true" />
   <img src="https://github-readme-streak-stats.herokuapp.com?user=Monsieur-Nico&theme=radical" />
 </p>
 
