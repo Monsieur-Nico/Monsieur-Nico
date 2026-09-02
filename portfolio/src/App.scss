@@ -1,8 +1,0 @@
-// Import variables
-@use "./Components/Style/Variables/palette" as palette;
-
-body {
-  background: #bdc3c7;
-  background: -webkit-linear-gradient(to right, #bdc3c7, #334e58ff);
-  background: linear-gradient(to bottom, #bdc3c7, #334e58ff);
-}
