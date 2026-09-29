@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 356" width="1200" height="356" role="img" aria-label="Experience. 2022 – Present: Owner &amp; Developer, NicoScript. Design and build custom web apps, UI/UX, and performance-tuned sites for clients. 50+ projects shipped. 2021 – 2022: Web Developer, Lighthouse Labs. Completed a 12-week intensive full-stack program covering data modelling, testing, and software architecture. 2019 – 2022: Owner &amp; Developer, Rok Commander. Built and ran a Discord bot that grew to 2.7M+ users. Owned support, roadmap, and UX end to end.">
+  <title>Experience</title>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0C0C0C"/>
+      <stop offset="1" stop-color="#1A1A1A"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="1198" height="354" rx="22" fill="url(#panel)" stroke="#3A3A3A" stroke-width="2"/>
+  <line x1="262" y1="42" x2="262" y2="250" stroke="#484848" stroke-width="2"/>
+  <circle cx="262" cy="42" r="7" fill="#FFFFFF"/>
+  <text x="48" y="48" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">2022 – Present</text>
+  <text x="296" y="48" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="19" font-weight="700" fill="#FFFFFF">Owner &amp; Developer <tspan fill="#8E8E8E" font-weight="600">·  NicoScript</tspan></text>
+  <text x="296" y="76" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="15" fill="#A1A1A1">Design and build custom web apps, UI/UX, and performance-tuned sites</text>
+  <text x="296" y="97" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="15" fill="#A1A1A1">for clients. 50+ projects shipped.</text>
+  <circle cx="262" cy="146" r="6" fill="#1A1A1A" stroke="#8E8E8E" stroke-width="2"/>
+  <text x="48" y="152" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#D1D1D1">2021 – 2022</text>
+  <text x="296" y="152" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="19" font-weight="700" fill="#FFFFFF">Web Developer <tspan fill="#8E8E8E" font-weight="600">·  Lighthouse Labs</tspan></text>
+  <text x="296" y="180" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="15" fill="#A1A1A1">Completed a 12-week intensive full-stack program covering data</text>
+  <text x="296" y="201" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="15" fill="#A1A1A1">modelling, testing, and software architecture.</text>
+  <circle cx="262" cy="250" r="6" fill="#1A1A1A" stroke="#8E8E8E" stroke-width="2"/>
+  <text x="48" y="256" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#D1D1D1">2019 – 2022</text>
+  <text x="296" y="256" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="19" font-weight="700" fill="#FFFFFF">Owner &amp; Developer <tspan fill="#8E8E8E" font-weight="600">·  Rok Commander</tspan></text>
+  <text x="296" y="284" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="15" fill="#A1A1A1">Built and ran a Discord bot that grew to 2.7M+ users. Owned support,</text>
+  <text x="296" y="305" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="15" fill="#A1A1A1">roadmap, and UX end to end.</text>
+</svg>

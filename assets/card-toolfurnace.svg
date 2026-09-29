@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 590 184" width="590" height="184" role="img" aria-label="ToolFurnace. Live. Automated, SEO-optimized AI tools aggregator built for passive organic growth. AI, SEO, Automation.">
+  <title>ToolFurnace</title>
+  <defs>
+    <linearGradient id="c" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1A1A1A"/>
+      <stop offset="1" stop-color="#262626"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="588" height="182" rx="20" fill="url(#c)" stroke="#3A3A3A" stroke-width="2"/>
+  <rect x="28" y="28" width="46" height="46" rx="13" fill="#ffffff" fill-opacity="0.06" stroke="#3A3A3A"/>
+  <g transform="translate(39 39) scale(1.0)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></g>
+  <text x="90" y="49" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="21" font-weight="700" fill="#FFFFFF">ToolFurnace</text>
+  <text x="90" y="68" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#8E8E8E">LIVE</text>
+  <text x="28" y="106" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="15" fill="#D1D1D1">Automated, SEO-optimized AI tools aggregator</text>
+  <text x="28" y="127" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="15" fill="#D1D1D1">built for passive organic growth.</text>
+
+  <rect x="28" y="132" width="40" height="26" rx="13" fill="#ffffff" fill-opacity="0.06" stroke="#484848"/>
+  <text x="48.0" y="149.5" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="12" fill="#F0F0F0">AI</text>
+  <rect x="76" y="132" width="48" height="26" rx="13" fill="#ffffff" fill-opacity="0.06" stroke="#484848"/>
+  <text x="100.0" y="149.5" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="12" fill="#F0F0F0">SEO</text>
+  <rect x="132" y="132" width="98" height="26" rx="13" fill="#ffffff" fill-opacity="0.06" stroke="#484848"/>
+  <text x="181.0" y="149.5" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="12" fill="#F0F0F0">Automation</text>
+  <text x="562" y="150" text-anchor="end" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#D1D1D1">toolfurnace.com →</text>
+</svg>
