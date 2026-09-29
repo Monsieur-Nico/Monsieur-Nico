@@ -55,8 +55,8 @@ Design and build custom web apps, UI/UX, and performance-tuned sites for clients
 ---
 
 <h2 align="center" style="background: linear-gradient(90deg, #5A189A, #9D4EDD); color: white; padding: 0.6rem 0; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);">🔧 Currently Working On</h2>
+- NicoScript Sites — local business websites with a client-editable dashboard
 - <a href="https://www.toolfurnace.com/">ToolFurnace</a> — automated, SEO-optimized AI tools aggregator
-- NicoScript Sites — multi-tenant platform for building and managing local business websites, with a client-editable dashboard
 
 ---
 
