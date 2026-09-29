@@ -18,13 +18,14 @@
 
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/white/user.svg"><img src="assets/icons/black/user.svg" width="22" height="22" align="absmiddle" alt="" /></picture>&nbsp; About
 
-> Self-taught full-stack developer based in Ottawa, Canada. I design and ship web apps end to end: front end, back end, and the AI automation in between.
+<p align="center"><img src="assets/about-intro.svg" alt="Self-taught full-stack developer based in Ottawa, Canada. I design and ship web apps end to end: front end, back end, and the AI automation in between." width="100%" /></p>
 
 I started out building a Discord bot that grew to 2.7M+ users, which pulled me deeper into web development. I sharpened that at the intensive [Lighthouse Labs](https://www.lighthouselabs.ca/) bootcamp, and today I run [NicoScript](https://www.nicoscript.com/), designing and building custom web apps, UI/UX, and performance-tuned sites for clients.
 
-| Who I build for | How I work |
-| :-- | :-- |
-| Devs & designers who want smart automation<br />Content creators & educators<br />Small businesses looking to scale<br />My own curiosity and future independence | Clarity over cleverness<br />Test early, refactor often<br />Build with purpose, not hype<br />Always be learning |
+<p align="center">
+  <img src="assets/card-audience.svg" alt="Who I build for: devs and designers who want smart automation; content creators and educators; small businesses looking to scale; my own curiosity and future independence." width="49%" />
+  <img src="assets/card-principles.svg" alt="How I work: clarity over cleverness; test early, refactor often; build with purpose, not hype; always be learning." width="49%" />
+</p>
 
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/white/folder.svg"><img src="assets/icons/black/folder.svg" width="22" height="22" align="absmiddle" alt="" /></picture>&nbsp; Projects
 

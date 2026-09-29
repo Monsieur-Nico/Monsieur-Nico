@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 590 274" width="590" height="274" role="img" aria-label="Who I build for. Devs &amp; designers who want smart automation; Content creators &amp; educators; Small businesses looking to scale; My own curiosity and future independence.">
+  <title>Who I build for</title>
+  <defs>
+    <linearGradient id="c" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1A1A1A"/>
+      <stop offset="1" stop-color="#262626"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="588" height="272" rx="20" fill="url(#c)" stroke="#3A3A3A" stroke-width="2"/>
+  <rect x="28" y="28" width="46" height="46" rx="13" fill="#ffffff" fill-opacity="0.06" stroke="#3A3A3A"/>
+  <g transform="translate(39 39) scale(1.0)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></g>
+  <text x="90" y="49" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="21" font-weight="700" fill="#FFFFFF">Who I build for</text>
+  <text x="90" y="68" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#8E8E8E">AUDIENCE</text>
+  <line x1="28" x2="562" y1="92" y2="92" stroke="#ffffff" stroke-opacity="0.08"/>
+  <circle cx="35" cy="123" r="3.5" fill="#FFFFFF"/>
+  <text x="52" y="128" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="15.5" fill="#D1D1D1">Devs &amp; designers who want smart automation</text>
+  <circle cx="35" cy="155" r="3.5" fill="#FFFFFF"/>
+  <text x="52" y="160" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="15.5" fill="#D1D1D1">Content creators &amp; educators</text>
+  <circle cx="35" cy="187" r="3.5" fill="#FFFFFF"/>
+  <text x="52" y="192" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="15.5" fill="#D1D1D1">Small businesses looking to scale</text>
+  <circle cx="35" cy="219" r="3.5" fill="#FFFFFF"/>
+  <text x="52" y="224" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="15.5" fill="#D1D1D1">My own curiosity and future independence</text>
+</svg>
