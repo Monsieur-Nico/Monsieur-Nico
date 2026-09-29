@@ -16,13 +16,13 @@
 
 <br />
 
-<h2 align="center">About</h2>
+<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/white/user.svg"><img src="assets/icons/black/user.svg" width="22" height="22" align="absmiddle" alt="" /></picture>&nbsp; About</h2>
 
 > Self-taught full-stack developer based in Ottawa, Canada. I design and ship web apps end to end: front end, back end, and the AI automation in between.
 
-- **Where it started:** a Discord bot that grew to 2.7M+ users and pulled me deeper into web development.
-- **Sharpened by:** the intensive 12-week full-stack program at [Lighthouse Labs](https://www.lighthouselabs.ca/).
-- **Today:** I run [NicoScript](https://www.nicoscript.com/), building custom web apps, UI/UX, and performance-tuned sites for clients.
+- <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/white/terminal.svg"><img src="assets/icons/black/terminal.svg" width="18" height="18" align="absmiddle" alt="" /></picture>&nbsp; **Where it started:** a Discord bot that grew to 2.7M+ users and pulled me deeper into web development.
+- <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/white/book-open.svg"><img src="assets/icons/black/book-open.svg" width="18" height="18" align="absmiddle" alt="" /></picture>&nbsp; **Sharpened by:** the intensive 12-week full-stack program at [Lighthouse Labs](https://www.lighthouselabs.ca/).
+- <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/white/code.svg"><img src="assets/icons/black/code.svg" width="18" height="18" align="absmiddle" alt="" /></picture>&nbsp; **Today:** I run [NicoScript](https://www.nicoscript.com/), building custom web apps, UI/UX, and performance-tuned sites for clients.
 
 | Who I build for | How I work |
 | :-- | :-- |
@@ -30,7 +30,7 @@
 
 <p align="center"><img src="assets/divider.svg" alt="" width="100%" /></p>
 
-<h2 align="center">Currently Building</h2>
+<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/white/zap.svg"><img src="assets/icons/black/zap.svg" width="22" height="22" align="absmiddle" alt="" /></picture>&nbsp; Currently Building</h2>
 
 > **Main focus right now:** NicoScript Sites.
 
@@ -41,7 +41,7 @@
 
 <p align="center"><img src="assets/divider.svg" alt="" width="100%" /></p>
 
-<h2 align="center">Featured Work</h2>
+<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/white/folder.svg"><img src="assets/icons/black/folder.svg" width="22" height="22" align="absmiddle" alt="" /></picture>&nbsp; Featured Work</h2>
 
 | Project | What it is |
 | :-- | :-- |
@@ -52,13 +52,13 @@ More on my [portfolio](https://www.nicoscript.com/#projects) →
 
 <p align="center"><img src="assets/divider.svg" alt="" width="100%" /></p>
 
-<h2 align="center">Tech Stack</h2>
+<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/white/layers.svg"><img src="assets/icons/black/layers.svg" width="22" height="22" align="absmiddle" alt="" /></picture>&nbsp; Tech Stack</h2>
 
 <p align="center"><img src="assets/stack.svg" alt="Tech stack. Frontend: React, Next.js, TypeScript, JavaScript, TailwindCSS. Backend: Node.js, Express. Data: PostgreSQL, MongoDB. Tooling: Git, VS Code, ESLint, Jest, Cypress, Storybook. AI: AI APIs, automation pipelines." width="100%" /></p>
 
 <p align="center"><img src="assets/divider.svg" alt="" width="100%" /></p>
 
-<h2 align="center">Experience</h2>
+<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/white/briefcase.svg"><img src="assets/icons/black/briefcase.svg" width="22" height="22" align="absmiddle" alt="" /></picture>&nbsp; Experience</h2>
 
 | When | Role | What I did |
 | :-- | :-- | :-- |
@@ -68,7 +68,7 @@ More on my [portfolio](https://www.nicoscript.com/#projects) →
 
 <p align="center"><img src="assets/divider.svg" alt="" width="100%" /></p>
 
-<h2 align="center">2026 Goals</h2>
+<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/white/target.svg"><img src="assets/icons/black/target.svg" width="22" height="22" align="absmiddle" alt="" /></picture>&nbsp; 2026 Goals</h2>
 
 - [ ] Launch NicoScript Sites and onboard the first clients
 - [ ] Grow ToolFurnace into a self-sustaining traffic engine
@@ -77,7 +77,7 @@ More on my [portfolio](https://www.nicoscript.com/#projects) →
 
 <p align="center"><img src="assets/divider.svg" alt="" width="100%" /></p>
 
-<h2 align="center">GitHub Stats</h2>
+<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/white/bar-chart.svg"><img src="assets/icons/black/bar-chart.svg" width="22" height="22" align="absmiddle" alt="" /></picture>&nbsp; GitHub Stats</h2>
 
 <p align="center">
   <img src="https://github-readme-stats-kappa-black-90.vercel.app/api?username=Monsieur-Nico&show_icons=true&hide_title=true&count_private=true&include_all_commits=true&bg_color=1C1C1C&border_color=3A3A3A&text_color=D1D1D1&icon_color=8E8E8E&ring_color=F0F0F0&title_color=FFFFFF" alt="Nicolas Alkhoury's GitHub stats: stars, commits, pull requests, issues and contributions" height="165" />

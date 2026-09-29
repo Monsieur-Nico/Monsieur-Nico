@@ -8,5 +8,6 @@
     </linearGradient>
   </defs>
   <rect x="1" y="1" width="188" height="46" rx="24" fill="url(#g)" stroke="none" stroke-width="2"/>
-  <text x="95.0" y="30" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="17" font-weight="700" fill="#0C0C0C">Portfolio →</text>
+  <g transform="translate(26 12) scale(1.0)" fill="none" stroke="#0C0C0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></g>
+  <text x="62" y="30" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="17" font-weight="700" fill="#0C0C0C">Portfolio →</text>
 </svg>
