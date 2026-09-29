@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 48" width="190" height="48" role="img" aria-label="Email me">
+  <title>Email me</title>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5A189A"/>
+      <stop offset="1" stop-color="#9D4EDD"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="188" height="46" rx="24" fill="#1b1030" stroke="#9D4EDD" stroke-width="2"/>
+  <text x="95.0" y="30" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="17" font-weight="700" fill="#E0AAFF">Email me →</text>
+</svg>

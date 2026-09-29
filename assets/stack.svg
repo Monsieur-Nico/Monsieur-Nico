@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="Tech stack. Frontend: React, Next.js, TypeScript, JavaScript, TailwindCSS. Backend: Node.js, Express. Data: PostgreSQL, MongoDB. Tooling: Git, VS Code, ESLint, Jest, Cypress, Storybook. AI: AI APIs, automation pipelines.">
+  <title>Tech stack</title>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17121f"/>
+      <stop offset="1" stop-color="#241539"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="1198" height="338" rx="22" fill="url(#panel)" stroke="#9D4EDD" stroke-opacity="0.3" stroke-width="2"/>
+  <text x="48" y="55.0" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14" font-weight="800" letter-spacing="3" fill="#C77DFF">FRONTEND</text>
+  <rect x="230" y="30" width="88" height="40" rx="20.0" fill="#2b1747" stroke="#9D4EDD" stroke-opacity="0.55"/>
+  <text x="274.0" y="55.5" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="600" fill="#F1E4FF">React</text>
+  <rect x="330" y="30" width="107" height="40" rx="20.0" fill="#2b1747" stroke="#9D4EDD" stroke-opacity="0.55"/>
+  <text x="383.5" y="55.5" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="600" fill="#F1E4FF">Next.js</text>
+  <rect x="449" y="30" width="136" height="40" rx="20.0" fill="#2b1747" stroke="#9D4EDD" stroke-opacity="0.55"/>
+  <text x="517.0" y="55.5" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="600" fill="#F1E4FF">TypeScript</text>
+  <rect x="597" y="30" width="136" height="40" rx="20.0" fill="#2b1747" stroke="#9D4EDD" stroke-opacity="0.55"/>
+  <text x="665.0" y="55.5" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="600" fill="#F1E4FF">JavaScript</text>
+  <rect x="745" y="30" width="146" height="40" rx="20.0" fill="#2b1747" stroke="#9D4EDD" stroke-opacity="0.55"/>
+  <text x="818.0" y="55.5" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="600" fill="#F1E4FF">TailwindCSS</text>
+  <line x1="48" x2="1152" y1="80.0" y2="80.0" stroke="#9D4EDD" stroke-opacity="0.12"/>
+  <text x="48" y="115.0" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14" font-weight="800" letter-spacing="3" fill="#C77DFF">BACKEND</text>
+  <rect x="230" y="90" width="107" height="40" rx="20.0" fill="#2b1747" stroke="#9D4EDD" stroke-opacity="0.55"/>
+  <text x="283.5" y="115.5" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="600" fill="#F1E4FF">Node.js</text>
+  <rect x="349" y="90" width="107" height="40" rx="20.0" fill="#2b1747" stroke="#9D4EDD" stroke-opacity="0.55"/>
+  <text x="402.5" y="115.5" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="600" fill="#F1E4FF">Express</text>
+  <line x1="48" x2="1152" y1="140.0" y2="140.0" stroke="#9D4EDD" stroke-opacity="0.12"/>
+  <text x="48" y="175.0" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14" font-weight="800" letter-spacing="3" fill="#C77DFF">DATA</text>
+  <rect x="230" y="150" width="136" height="40" rx="20.0" fill="#2b1747" stroke="#9D4EDD" stroke-opacity="0.55"/>
+  <text x="298.0" y="175.5" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="600" fill="#F1E4FF">PostgreSQL</text>
+  <rect x="378" y="150" width="107" height="40" rx="20.0" fill="#2b1747" stroke="#9D4EDD" stroke-opacity="0.55"/>
+  <text x="431.5" y="175.5" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="600" fill="#F1E4FF">MongoDB</text>
+  <line x1="48" x2="1152" y1="200.0" y2="200.0" stroke="#9D4EDD" stroke-opacity="0.12"/>
+  <text x="48" y="235.0" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14" font-weight="800" letter-spacing="3" fill="#C77DFF">TOOLING</text>
+  <rect x="230" y="210" width="69" height="40" rx="20.0" fill="#2b1747" stroke="#9D4EDD" stroke-opacity="0.55"/>
+  <text x="264.5" y="235.5" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="600" fill="#F1E4FF">Git</text>
+  <rect x="311" y="210" width="107" height="40" rx="20.0" fill="#2b1747" stroke="#9D4EDD" stroke-opacity="0.55"/>
+  <text x="364.5" y="235.5" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="600" fill="#F1E4FF">VS Code</text>
+  <rect x="430" y="210" width="98" height="40" rx="20.0" fill="#2b1747" stroke="#9D4EDD" stroke-opacity="0.55"/>
+  <text x="479.0" y="235.5" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="600" fill="#F1E4FF">ESLint</text>
+  <rect x="540" y="210" width="78" height="40" rx="20.0" fill="#2b1747" stroke="#9D4EDD" stroke-opacity="0.55"/>
+  <text x="579.0" y="235.5" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="600" fill="#F1E4FF">Jest</text>
+  <rect x="630" y="210" width="107" height="40" rx="20.0" fill="#2b1747" stroke="#9D4EDD" stroke-opacity="0.55"/>
+  <text x="683.5" y="235.5" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="600" fill="#F1E4FF">Cypress</text>
+  <rect x="749" y="210" width="126" height="40" rx="20.0" fill="#2b1747" stroke="#9D4EDD" stroke-opacity="0.55"/>
+  <text x="812.0" y="235.5" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="600" fill="#F1E4FF">Storybook</text>
+  <line x1="48" x2="1152" y1="260.0" y2="260.0" stroke="#9D4EDD" stroke-opacity="0.12"/>
+  <text x="48" y="295.0" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14" font-weight="800" letter-spacing="3" fill="#C77DFF">AI</text>
+  <rect x="230" y="270" width="107" height="40" rx="20.0" fill="#2b1747" stroke="#9D4EDD" stroke-opacity="0.55"/>
+  <text x="283.5" y="295.5" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="600" fill="#F1E4FF">AI APIs</text>
+  <rect x="349" y="270" width="232" height="40" rx="20.0" fill="#2b1747" stroke="#9D4EDD" stroke-opacity="0.55"/>
+  <text x="465.0" y="295.5" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="600" fill="#F1E4FF">Automation pipelines</text>
+</svg>

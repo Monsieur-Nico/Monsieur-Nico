@@ -1,138 +1,91 @@
-<div align="center" style="padding: 2.5rem; background: radial-gradient(circle at top, #5A189A 0%, #1f2633 100%); border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.6);">
-  <img src="https://github.com/Monsieur-Nico.png" width="120" style="border-radius: 50%; border: 3px solid #fff;" />
-  <h1 style="color: #fff; margin: 1rem 0 0.2rem;">Nicolas Alkhoury</h1>
-  <p style="color: #ddd; font-style: italic;">Full-Stack Developer • AI Toolmaker</p>
-  <p>
-    <a href="https://www.nicoscript.com/">🌐 Portfolio</a> ·
-    <a href="https://linkedin.com/in/monsieur-nico">💼 LinkedIn</a> ·
-    <a href="mailto:info@nicoscript.com">✉️ Email</a>
-  </p>
+<div align="center">
+
+<img src="assets/banner.svg" alt="Nicolas Alkhoury — Full-Stack Developer and AI Toolmaker based in Ottawa, Canada" width="100%" />
+
+<p>
+  <a href="https://www.nicoscript.com/"><img src="assets/btn-portfolio.svg" alt="Visit my portfolio" height="46" /></a>
+  &nbsp;
+  <a href="https://www.linkedin.com/in/monsieur-nico/"><img src="assets/btn-linkedin.svg" alt="Connect with me on LinkedIn" height="46" /></a>
+  &nbsp;
+  <a href="mailto:info@nicoscript.com"><img src="assets/btn-email.svg" alt="Send me an email" height="46" /></a>
+</p>
+
+<img src="assets/stats.svg" alt="2.7M+ Discord bot users, 50+ projects shipped, 4+ years running NicoScript, 7 years building software" width="100%" />
+
 </div>
 
-<h2 align="center" style="background: linear-gradient(90deg, #5A189A, #9D4EDD); color: white; padding: 0.6rem 0; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);">👋 About Me</h2>
+<br />
 
-A self-taught, full-stack developer based in Ottawa, Canada 🇨🇦. I got my start building a Discord bot that grew to 2.7M+ users, which pulled me deeper into web development — later sharpened through the intensive Web Development Bootcamp at [Lighthouse Labs](https://www.lighthouselabs.ca/). Today I run [NicoScript](https://www.nicoscript.com/), where I design and ship web apps end to end: front end, back end, and the AI automation in between.
+<h2 align="center">👋 About Me</h2>
 
-_This README is a glimpse into what I do, what I love, and how to reach me._
+> Self-taught full-stack developer based in Ottawa, Canada 🇨🇦. I design and ship web apps end to end: front end, back end, and the AI automation in between.
 
----
+- 🤖 **Where it started:** a Discord bot that grew to 2.7M+ users and pulled me deeper into web development.
+- 🎓 **Sharpened by:** the intensive 12-week full-stack program at [Lighthouse Labs](https://www.lighthouselabs.ca/).
+- 🏗️ **Today:** I run [NicoScript](https://www.nicoscript.com/), building custom web apps, UI/UX, and performance-tuned sites for clients.
 
-### 🌍 Based In
+| 🎯 Who I build for | 🧭 How I work |
+| :-- | :-- |
+| 🛠️ Devs & designers who want smart automation<br />🎬 Content creators & educators<br />📈 Small businesses looking to scale<br />💼 My own curiosity and future independence | 🔍 Clarity over cleverness<br />🧪 Test early, refactor often<br />🎯 Build with purpose, not hype<br />🌱 Always be learning |
 
-🇨🇦 Ottawa, Ontario — Building cool things in the cold north.
+<p align="center"><img src="assets/divider.svg" alt="" width="100%" /></p>
 
-### 💡 Favorite Tech
+<h2 align="center">🔧 Currently Building</h2>
 
-TypeScript · JavaScript · React · Next.js · Node.js · Express · TailwindCSS · PostgreSQL · MongoDB · Git · AI APIs
+> [!NOTE]
+> **Main focus right now:** NicoScript Sites.
 
-### 🧩 What I Build For
+| 🏗️ NicoScript Sites | 🔥 ToolFurnace |
+| :-- | :-- |
+| Local business websites with a client-editable dashboard. | Automated, SEO-optimized AI tools aggregator built for passive organic growth. |
+| 🚧 In development | 🌐 [toolfurnace.com](https://www.toolfurnace.com/) |
 
-- Devs & designers who want smart automation
-- Content creators & educators
-- Small businesses looking to scale
-- My own curiosity and future independence 💼
+<p align="center"><img src="assets/divider.svg" alt="" width="100%" /></p>
 
-### 🧭 My Dev Principles
+<h2 align="center">📌 Featured Work</h2>
 
-- 🔍 Clarity over cleverness
-- 🧪 Test early, refactor often
-- 🎯 Build with purpose, not hype
-- 🌱 Always be learning
+| Project | What it is |
+| :-- | :-- |
+| [**textConvert**](https://github.com/Monsieur-Nico/textConvert) | Lightweight, dependency-free TypeScript text utilities: PII redaction, case conversion, validation, and analysis. |
+| [**Self-Education in Computer Science**](https://github.com/Monsieur-Nico/Self-Education-in-Computer-Science) | A low-cost, self-paced program to learn computer science course by course. |
 
----
+More on my [portfolio](https://www.nicoscript.com/#projects) →
 
-<h2 align="center" style="background: linear-gradient(90deg, #5A189A, #9D4EDD); color: white; padding: 0.6rem 0; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);">🧳 Experience</h2>
+<p align="center"><img src="assets/divider.svg" alt="" width="100%" /></p>
 
-**Owner & Developer · Rok Commander** (2019 – 2022)
-Built and ran a Discord bot that grew to 2.7M+ users — owned support, roadmap, and UX end to end.
+<h2 align="center">🧠 Tech Stack</h2>
 
-**Web Developer · [Lighthouse Labs](https://www.lighthouselabs.ca/)** (2021 – 2022)
-Completed a 12-week intensive full-stack program covering data modelling, testing, and software architecture.
+<p align="center"><img src="assets/stack.svg" alt="Tech stack. Frontend: React, Next.js, TypeScript, JavaScript, TailwindCSS. Backend: Node.js, Express. Data: PostgreSQL, MongoDB. Tooling: Git, VS Code, ESLint, Jest, Cypress, Storybook. AI: AI APIs, automation pipelines." width="100%" /></p>
 
-**Owner & Developer · [NicoScript](https://www.nicoscript.com/)** (2022 – Present)
-Design and build custom web apps, UI/UX, and performance-tuned sites for clients — 50+ projects shipped.
+<p align="center"><img src="assets/divider.svg" alt="" width="100%" /></p>
 
----
+<h2 align="center">🧳 Experience</h2>
 
-<h2 align="center" style="background: linear-gradient(90deg, #5A189A, #9D4EDD); color: white; padding: 0.6rem 0; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);">🔧 Currently Working On</h2>
-- NicoScript Sites — local business websites with a client-editable dashboard
-- <a href="https://www.toolfurnace.com/">ToolFurnace</a> — automated, SEO-optimized AI tools aggregator
+| When | Role | What I did |
+| :-- | :-- | :-- |
+| **2022 – Present** | Owner & Developer · [NicoScript](https://www.nicoscript.com/) | Design and build custom web apps, UI/UX, and performance-tuned sites for clients. 50+ projects shipped. |
+| **2021 – 2022** | Web Developer · [Lighthouse Labs](https://www.lighthouselabs.ca/) | Completed a 12-week intensive full-stack program covering data modelling, testing, and software architecture. |
+| **2019 – 2022** | Owner & Developer · Rok Commander | Built and ran a Discord bot that grew to 2.7M+ users. Owned support, roadmap, and UX end to end. |
 
----
+<p align="center"><img src="assets/divider.svg" alt="" width="100%" /></p>
 
-<h2 align="center" style="background: linear-gradient(90deg, #5A189A, #9D4EDD); color: white; padding: 0.6rem 0; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);">📌 Pinned Projects</h2>
-- <a href="https://github.com/Monsieur-Nico/textConvert">textConvert</a> — lightweight, dependency-free TypeScript text utilities: PII redaction, case conversion, validation, and analysis
-- <a href="https://github.com/Monsieur-Nico/Self-Education-in-Computer-Science">Self-Education in Computer Science</a> — a free, self-paced CS curriculum
-- <a href="https://www.toolfurnace.com/">ToolFurnace</a> — AI-powered tools aggregator built for passive organic growth
+<h2 align="center">🎯 2026 Goals</h2>
 
-See more on my <a href="https://www.nicoscript.com/#projects">portfolio</a>.
+- [ ] 🏗️ Launch NicoScript Sites and onboard the first clients
+- [ ] 🔥 Grow ToolFurnace into a self-sustaining traffic engine
+- [ ] 🧠 Go deeper on API security and AI-driven automation pipelines
+- [ ] 📈 Grow NicoScript's client base and my personal brand
 
----
-
-<h2 align="center" style="background: linear-gradient(90deg, #5A189A, #9D4EDD); color: white; padding: 0.6rem 0; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);">🧠 Skills at a Glance</h2>
-
-<table align="center">
-  <tr><td><strong>Frontend</strong></td><td>React, Next.js, TypeScript, TailwindCSS</td></tr>
-  <tr><td><strong>Backend</strong></td><td>Node.js, Express, PostgreSQL, MongoDB</td></tr>
-  <tr><td><strong>Tooling</strong></td><td>Git, VS Code, ESLint, Jest, Cypress, Storybook</td></tr>
-</table>
-
----
-
-<p align="center" style="padding: 0.6rem">
-  <img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,tailwind,nodejs,express,postgres,mongodb,jest,git,vscode" />
-</p>
-
----
-
-<h2 align="center" style="background: linear-gradient(90deg, #5A189A, #9D4EDD); color: white; padding: 0.6rem 0; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);">📊 GitHub Stats</h2>
-
+<details>
+<summary><b>📊 GitHub stats</b> (click to expand)</summary>
+<br />
 <p align="center">
-  <img src="https://github-stats-extended.vercel.app/api?username=Monsieur-Nico&show_icons=true&theme=radical&hide_title=true&count_private=true" />
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=Monsieur-Nico&theme=radical" />
+  <img src="https://github-stats-extended.vercel.app/api?username=Monsieur-Nico&show_icons=true&theme=radical&hide_title=true&count_private=true" alt="Nicolas Alkhoury's GitHub stats" />
 </p>
+</details>
 
----
-
-<h2 align="center" style="background: linear-gradient(90deg, #5A189A, #9D4EDD); color: white; padding: 0.6rem 0; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);">🎯 2026 Goals</h2>
-
-- 🏗️ Launch NicoScript Sites and onboard the first clients
-- 🔥 Grow ToolFurnace into a self-sustaining traffic engine
-- 🧠 Go deeper on API security and AI-driven automation pipelines
-- 📈 Grow NicoScript's client base and my personal brand
-
----
+<p align="center"><img src="assets/divider.svg" alt="" width="100%" /></p>
 
 <p align="center"><i>“Build boldly. Learn loudly. Launch often.”</i></p>
 
-<p align="center">
-  <a href="https://www.nicoscript.com/" style="text-decoration: none;">
-    <span style="
-      display: inline-block;
-      background: linear-gradient(90deg, #5A189A, #9D4EDD);
-      color: white;
-      font-weight: 600;
-      padding: 0.75rem 1.5rem;
-      border-radius: 30px;
-      box-shadow: 0 4px 14px rgba(90, 24, 154, 0.5);
-      font-family: 'Segoe UI', sans-serif;
-      transition: background 0.3s ease;
-    ">🌐 Visit My Portfolio</span>
-  </a>
-  &nbsp;
-  <a href="https://www.linkedin.com/in/monsieur-nico/" style="text-decoration: none;">
-    <span style="
-      display: inline-block;
-      background: linear-gradient(90deg, #5A189A, #9D4EDD);
-      color: white;
-      font-weight: 600;
-      padding: 0.75rem 1.5rem;
-      border-radius: 30px;
-      box-shadow: 0 4px 14px rgba(90, 24, 154, 0.5);
-      font-family: 'Segoe UI', sans-serif;
-      transition: background 0.3s ease;
-    ">🚀 Let’s Connect on LinkedIn</span>
-  </a>
-</p>
-
-> Thanks for stopping by! ⭐️
+<p align="center">Thanks for stopping by! ⭐️</p>
