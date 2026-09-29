@@ -76,13 +76,19 @@ More on my [portfolio](https://www.nicoscript.com/#projects) →
 - [ ] 🧠 Go deeper on API security and AI-driven automation pipelines
 - [ ] 📈 Grow NicoScript's client base and my personal brand
 
-<details>
-<summary><b>📊 GitHub stats</b> (click to expand)</summary>
-<br />
+<p align="center"><img src="assets/divider.svg" alt="" width="100%" /></p>
+
+<h2 align="center">📊 GitHub Stats</h2>
+
 <p align="center">
-  <img src="https://github-stats-extended.vercel.app/api?username=Monsieur-Nico&show_icons=true&theme=radical&hide_title=true&count_private=true" alt="Nicolas Alkhoury's GitHub stats" />
+  <img src="https://github-readme-stats-kappa-black-90.vercel.app/api?username=Monsieur-Nico&show_icons=true&theme=radical&hide_title=true&count_private=true&include_all_commits=true" alt="Nicolas Alkhoury's GitHub stats: stars, commits, pull requests, issues and contributions" height="165" />
+  &nbsp;
+  <img src="https://github-readme-stats-kappa-black-90.vercel.app/api/top-langs/?username=Monsieur-Nico&layout=compact&theme=radical&langs_count=8&count_private=true" alt="Nicolas Alkhoury's most used languages" height="165" />
 </p>
-</details>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=Monsieur-Nico&theme=radical" alt="Nicolas Alkhoury's GitHub contribution streak: total contributions, current streak and longest streak" />
+</p>
 
 <p align="center"><img src="assets/divider.svg" alt="" width="100%" /></p>
 
