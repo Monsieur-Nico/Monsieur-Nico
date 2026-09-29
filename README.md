@@ -56,12 +56,12 @@ Design and build custom web apps, UI/UX, and performance-tuned sites for clients
 
 <h2 align="center" style="background: linear-gradient(90deg, #5A189A, #9D4EDD); color: white; padding: 0.6rem 0; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);">🔧 Currently Working On</h2>
 - <a href="https://www.toolfurnace.com/">ToolFurnace</a> — automated, SEO-optimized AI tools aggregator
-- KeyCrate — API for generating software license keys
+- NicoScript Sites — multi-tenant platform for building and managing local business websites, with a client-editable dashboard
 
 ---
 
 <h2 align="center" style="background: linear-gradient(90deg, #5A189A, #9D4EDD); color: white; padding: 0.6rem 0; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);">📌 Pinned Projects</h2>
-- <a href="https://github.com/Monsieur-Nico/textConvert">textConvert</a> — convert text between naming conventions (camelCase, snake_case, kebab-case, and more)
+- <a href="https://github.com/Monsieur-Nico/textConvert">textConvert</a> — lightweight, dependency-free TypeScript text utilities: PII redaction, case conversion, validation, and analysis
 - <a href="https://github.com/Monsieur-Nico/Self-Education-in-Computer-Science">Self-Education in Computer Science</a> — a free, self-paced CS curriculum
 - <a href="https://github.com/Monsieur-Nico/Interview-Scheduler">Interview Scheduler</a> — SPA for creating and managing interview appointments
 - <a href="https://www.toolfurnace.com/">ToolFurnace</a> — AI-powered tools aggregator built for passive organic growth
@@ -97,7 +97,7 @@ See more on my <a href="https://www.nicoscript.com/#projects">portfolio</a>.
 
 <h2 align="center" style="background: linear-gradient(90deg, #5A189A, #9D4EDD); color: white; padding: 0.6rem 0; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);">🎯 2026 Goals</h2>
 
-- 🔐 Finalize and launch KeyCrate
+- 🏗️ Launch NicoScript Sites and onboard the first clients
 - 🔥 Grow ToolFurnace into a self-sustaining traffic engine
 - 🧠 Go deeper on API security and AI-driven automation pipelines
 - 📈 Grow NicoScript's client base and my personal brand
