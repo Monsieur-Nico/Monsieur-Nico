@@ -4,33 +4,33 @@
   <desc id="d">Full-Stack Developer and AI Toolmaker based in Ottawa, Canada.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#120d1c"/>
-      <stop offset="0.55" stop-color="#221040"/>
-      <stop offset="1" stop-color="#4a1585"/>
+      <stop offset="0" stop-color="#0C0C0C"/>
+      <stop offset="0.6" stop-color="#1A1A1A"/>
+      <stop offset="1" stop-color="#333333"/>
     </linearGradient>
     <radialGradient id="glowA">
-      <stop offset="0" stop-color="#9D4EDD" stop-opacity="0.55"/>
-      <stop offset="1" stop-color="#9D4EDD" stop-opacity="0"/>
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="glowB">
-      <stop offset="0" stop-color="#5A189A" stop-opacity="0.7"/>
-      <stop offset="1" stop-color="#5A189A" stop-opacity="0"/>
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#ffffff"/>
-      <stop offset="1" stop-color="#E0AAFF"/>
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#A1A1A1"/>
     </linearGradient>
     <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#E0AAFF"/>
-      <stop offset="1" stop-color="#5A189A"/>
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#636363"/>
     </linearGradient>
     <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#5A189A"/>
-      <stop offset="0.5" stop-color="#C77DFF"/>
-      <stop offset="1" stop-color="#5A189A"/>
+      <stop offset="0" stop-color="#3A3A3A"/>
+      <stop offset="0.5" stop-color="#D1D1D1"/>
+      <stop offset="1" stop-color="#3A3A3A"/>
     </linearGradient>
     <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1.2" fill="#ffffff" fill-opacity="0.08"/>
+      <circle cx="2" cy="2" r="1.2" fill="#ffffff" fill-opacity="0.07"/>
     </pattern>
     <clipPath id="card"><rect width="1200" height="360" rx="24"/></clipPath>
   </defs>
@@ -47,21 +47,21 @@
     <rect width="1200" height="360" fill="url(#dots)"/>
     <circle class="f1" cx="1030" cy="60" r="240" fill="url(#glowA)"/>
     <circle class="f2" cx="90" cy="350" r="220" fill="url(#glowB)"/>
-    <text x="1150" y="270" text-anchor="end" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="200" font-weight="800" fill="#ffffff" fill-opacity="0.05">&lt;/&gt;</text>
+    <text x="1150" y="270" text-anchor="end" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="200" font-weight="800" fill="#ffffff" fill-opacity="0.045">&lt;/&gt;</text>
 
-    <circle cx="140" cy="180" r="74" fill="none" stroke="url(#ring)" stroke-width="4"/>
-    <circle cx="140" cy="180" r="62" fill="#1b1030"/>
+    <circle cx="140" cy="180" r="74" fill="none" stroke="url(#ring)" stroke-width="3"/>
+    <circle cx="140" cy="180" r="62" fill="#0C0C0C"/>
     <text x="140" y="203" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="68" font-weight="800" fill="url(#name)">N</text>
-    <circle class="tw" cx="205" cy="128" r="6" fill="#C77DFF"/>
+    <circle class="tw" cx="205" cy="128" r="5" fill="#D1D1D1"/>
 
-    <text x="250" y="116" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="4" fill="#C77DFF">HELLO, I'M</text>
+    <text x="250" y="116" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="4" fill="#8E8E8E">HELLO, I'M</text>
     <text x="250" y="180" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="60" font-weight="800" fill="url(#name)">Nicolas Alkhoury</text>
-    <text x="250" y="224" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="27" font-weight="600" fill="#E0AAFF">Full-Stack Developer • AI Toolmaker</text>
-    <text x="250" y="264" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="19" fill="#CBB8E6">Web apps end to end — front end, back end, and the AI in between.</text>
+    <text x="250" y="224" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="27" font-weight="600" fill="#D1D1D1">Full-Stack Developer • AI Toolmaker</text>
+    <text x="250" y="264" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="19" fill="#8E8E8E">Web apps end to end — front end, back end, and the AI in between.</text>
 
-    <rect x="250" y="288" width="176" height="34" rx="17" fill="#ffffff" fill-opacity="0.07" stroke="#9D4EDD" stroke-opacity="0.6"/>
-    <circle class="tw" cx="272" cy="305" r="5" fill="#7CFFB2"/>
-    <text x="288" y="310" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="15" fill="#E6DCF5">Ottawa, Canada</text>
+    <rect x="250" y="288" width="176" height="34" rx="17" fill="#ffffff" fill-opacity="0.06" stroke="#636363"/>
+    <circle class="tw" cx="272" cy="305" r="4.5" fill="#D1D1D1"/>
+    <text x="288" y="310" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="15" fill="#F0F0F0">Ottawa, Canada</text>
 
     <rect y="352" width="1200" height="8" fill="url(#bar)"/>
   </g>

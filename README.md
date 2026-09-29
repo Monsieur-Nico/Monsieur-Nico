@@ -16,33 +16,32 @@
 
 <br />
 
-<h2 align="center">👋 About Me</h2>
+<h2 align="center">About</h2>
 
-> Self-taught full-stack developer based in Ottawa, Canada 🇨🇦. I design and ship web apps end to end: front end, back end, and the AI automation in between.
+> Self-taught full-stack developer based in Ottawa, Canada. I design and ship web apps end to end: front end, back end, and the AI automation in between.
 
-- 🤖 **Where it started:** a Discord bot that grew to 2.7M+ users and pulled me deeper into web development.
-- 🎓 **Sharpened by:** the intensive 12-week full-stack program at [Lighthouse Labs](https://www.lighthouselabs.ca/).
-- 🏗️ **Today:** I run [NicoScript](https://www.nicoscript.com/), building custom web apps, UI/UX, and performance-tuned sites for clients.
+- **Where it started:** a Discord bot that grew to 2.7M+ users and pulled me deeper into web development.
+- **Sharpened by:** the intensive 12-week full-stack program at [Lighthouse Labs](https://www.lighthouselabs.ca/).
+- **Today:** I run [NicoScript](https://www.nicoscript.com/), building custom web apps, UI/UX, and performance-tuned sites for clients.
 
-| 🎯 Who I build for | 🧭 How I work |
+| Who I build for | How I work |
 | :-- | :-- |
-| 🛠️ Devs & designers who want smart automation<br />🎬 Content creators & educators<br />📈 Small businesses looking to scale<br />💼 My own curiosity and future independence | 🔍 Clarity over cleverness<br />🧪 Test early, refactor often<br />🎯 Build with purpose, not hype<br />🌱 Always be learning |
+| Devs & designers who want smart automation<br />Content creators & educators<br />Small businesses looking to scale<br />My own curiosity and future independence | Clarity over cleverness<br />Test early, refactor often<br />Build with purpose, not hype<br />Always be learning |
 
 <p align="center"><img src="assets/divider.svg" alt="" width="100%" /></p>
 
-<h2 align="center">🔧 Currently Building</h2>
+<h2 align="center">Currently Building</h2>
 
-> [!NOTE]
 > **Main focus right now:** NicoScript Sites.
 
-| 🏗️ NicoScript Sites | 🔥 ToolFurnace |
+| NicoScript Sites | ToolFurnace |
 | :-- | :-- |
 | Local business websites with a client-editable dashboard. | Automated, SEO-optimized AI tools aggregator built for passive organic growth. |
-| 🚧 In development | 🌐 [toolfurnace.com](https://www.toolfurnace.com/) |
+| In development | [toolfurnace.com](https://www.toolfurnace.com/) → |
 
 <p align="center"><img src="assets/divider.svg" alt="" width="100%" /></p>
 
-<h2 align="center">📌 Featured Work</h2>
+<h2 align="center">Featured Work</h2>
 
 | Project | What it is |
 | :-- | :-- |
@@ -53,13 +52,13 @@ More on my [portfolio](https://www.nicoscript.com/#projects) →
 
 <p align="center"><img src="assets/divider.svg" alt="" width="100%" /></p>
 
-<h2 align="center">🧠 Tech Stack</h2>
+<h2 align="center">Tech Stack</h2>
 
 <p align="center"><img src="assets/stack.svg" alt="Tech stack. Frontend: React, Next.js, TypeScript, JavaScript, TailwindCSS. Backend: Node.js, Express. Data: PostgreSQL, MongoDB. Tooling: Git, VS Code, ESLint, Jest, Cypress, Storybook. AI: AI APIs, automation pipelines." width="100%" /></p>
 
 <p align="center"><img src="assets/divider.svg" alt="" width="100%" /></p>
 
-<h2 align="center">🧳 Experience</h2>
+<h2 align="center">Experience</h2>
 
 | When | Role | What I did |
 | :-- | :-- | :-- |
@@ -69,29 +68,29 @@ More on my [portfolio](https://www.nicoscript.com/#projects) →
 
 <p align="center"><img src="assets/divider.svg" alt="" width="100%" /></p>
 
-<h2 align="center">🎯 2026 Goals</h2>
+<h2 align="center">2026 Goals</h2>
 
-- [ ] 🏗️ Launch NicoScript Sites and onboard the first clients
-- [ ] 🔥 Grow ToolFurnace into a self-sustaining traffic engine
-- [ ] 🧠 Go deeper on API security and AI-driven automation pipelines
-- [ ] 📈 Grow NicoScript's client base and my personal brand
+- [ ] Launch NicoScript Sites and onboard the first clients
+- [ ] Grow ToolFurnace into a self-sustaining traffic engine
+- [ ] Go deeper on API security and AI-driven automation pipelines
+- [ ] Grow NicoScript's client base and my personal brand
 
 <p align="center"><img src="assets/divider.svg" alt="" width="100%" /></p>
 
-<h2 align="center">📊 GitHub Stats</h2>
+<h2 align="center">GitHub Stats</h2>
 
 <p align="center">
-  <img src="https://github-readme-stats-kappa-black-90.vercel.app/api?username=Monsieur-Nico&show_icons=true&theme=radical&hide_title=true&count_private=true&include_all_commits=true" alt="Nicolas Alkhoury's GitHub stats: stars, commits, pull requests, issues and contributions" height="165" />
+  <img src="https://github-readme-stats-kappa-black-90.vercel.app/api?username=Monsieur-Nico&show_icons=true&hide_title=true&count_private=true&include_all_commits=true&bg_color=1C1C1C&border_color=3A3A3A&text_color=D1D1D1&icon_color=8E8E8E&ring_color=F0F0F0&title_color=FFFFFF" alt="Nicolas Alkhoury's GitHub stats: stars, commits, pull requests, issues and contributions" height="165" />
   &nbsp;
-  <img src="https://github-readme-stats-kappa-black-90.vercel.app/api/top-langs/?username=Monsieur-Nico&layout=compact&theme=radical&langs_count=8&count_private=true" alt="Nicolas Alkhoury's most used languages" height="165" />
+  <img src="assets/languages.svg" alt="Nicolas Alkhoury's most used languages: TypeScript 30.5%, Lua 26.8%, JavaScript 26.3%, Ruby 7.3%, HTML 5.0%, CSS 1.9%, SCSS 1.1%, EJS 1.0%" height="165" />
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=Monsieur-Nico&theme=radical" alt="Nicolas Alkhoury's GitHub contribution streak: total contributions, current streak and longest streak" />
+  <img src="https://streak-stats.demolab.com?user=Monsieur-Nico&background=1C1C1C&border=3A3A3A&stroke=3A3A3A&ring=F0F0F0&fire=F0F0F0&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=D1D1D1&sideLabels=8E8E8E&dates=8E8E8E" alt="Nicolas Alkhoury's GitHub contribution streak: total contributions, current streak and longest streak" />
 </p>
 
 <p align="center"><img src="assets/divider.svg" alt="" width="100%" /></p>
 
 <p align="center"><i>“Build boldly. Learn loudly. Launch often.”</i></p>
 
-<p align="center">Thanks for stopping by! ⭐️</p>
+<p align="center">Thanks for stopping by.</p>
