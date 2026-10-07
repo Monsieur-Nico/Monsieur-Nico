@@ -1,0 +1,30 @@
+name: Update most used languages card
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Run script tests
+        run: node --test scripts/update-languages.test.js
+
+      - name: Regenerate card
+        env:
+          GH_TOKEN: ${{ secrets.LANGUAGES_TOKEN }}
+        run: node scripts/update-languages.js
+
+      - name: Commit and push if the numbers changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/languages.svg README.md
+          git diff --cached --quiet || (git commit -m "Update most used languages card" && git push)
