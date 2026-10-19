@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 467 165" width="467" height="165" role="img" aria-label="Most used languages: TypeScript 48.8%, JavaScript 30.6%, HTML 7.3%, Lua 4.3%, CSS 2.8%, Python 2.8%, PLpgSQL 2.3%, Ruby 1.2%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 467 165" width="467" height="165" role="img" aria-label="Most used languages: TypeScript 55.8%, JavaScript 24.2%, HTML 6.1%, PLpgSQL 5.1%, Lua 3.4%, CSS 2.2%, Python 2.2%, Shell 1.0%">
   <title>Most used languages</title>
   <defs>
     <clipPath id="bar"><rect x="25" y="56" width="417" height="10" rx="5"/></clipPath>
@@ -7,29 +7,29 @@
   <rect x="0.5" y="0.5" width="466" height="164" rx="6" fill="#1C1C1C" stroke="#3A3A3A"/>
   <text x="25" y="35" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="18" font-weight="600" fill="#FFFFFF">Most Used Languages</text>
   <g clip-path="url(#bar)">
-  <rect x="25.00" y="56" width="203.82" height="10" fill="#FFFFFF"/>
-  <rect x="228.32" y="56" width="128.04" height="10" fill="#E5E5E5"/>
-  <rect x="355.86" y="56" width="30.79" height="10" fill="#D1D1D1"/>
-  <rect x="386.15" y="56" width="18.45" height="10" fill="#B4B4B4"/>
-  <rect x="404.10" y="56" width="12.16" height="10" fill="#A1A1A1"/>
-  <rect x="415.76" y="56" width="12.16" height="10" fill="#8E8E8E"/>
-  <rect x="427.42" y="56" width="10.17" height="10" fill="#6E6E6E"/>
-  <rect x="437.08" y="56" width="5.42" height="10" fill="#585858"/>
+  <rect x="25.00" y="56" width="233.22" height="10" fill="#FFFFFF"/>
+  <rect x="257.72" y="56" width="101.48" height="10" fill="#E5E5E5"/>
+  <rect x="358.70" y="56" width="25.85" height="10" fill="#D1D1D1"/>
+  <rect x="384.05" y="56" width="21.60" height="10" fill="#B4B4B4"/>
+  <rect x="405.15" y="56" width="14.58" height="10" fill="#A1A1A1"/>
+  <rect x="419.23" y="56" width="9.80" height="10" fill="#8E8E8E"/>
+  <rect x="428.54" y="56" width="9.65" height="10" fill="#6E6E6E"/>
+  <rect x="437.68" y="56" width="4.82" height="10" fill="#585858"/>
   </g>
   <circle cx="30" cy="92" r="5" fill="#FFFFFF"/>
-  <text x="41" y="96" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="12.5" fill="#D1D1D1">TypeScript <tspan fill="#8E8E8E">48.8%</tspan></text>
+  <text x="41" y="96" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="12.5" fill="#D1D1D1">TypeScript <tspan fill="#8E8E8E">55.8%</tspan></text>
   <circle cx="175" cy="92" r="5" fill="#E5E5E5"/>
-  <text x="186" y="96" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="12.5" fill="#D1D1D1">JavaScript <tspan fill="#8E8E8E">30.6%</tspan></text>
+  <text x="186" y="96" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="12.5" fill="#D1D1D1">JavaScript <tspan fill="#8E8E8E">24.2%</tspan></text>
   <circle cx="320" cy="92" r="5" fill="#D1D1D1"/>
-  <text x="331" y="96" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="12.5" fill="#D1D1D1">HTML <tspan fill="#8E8E8E">7.3%</tspan></text>
+  <text x="331" y="96" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="12.5" fill="#D1D1D1">HTML <tspan fill="#8E8E8E">6.1%</tspan></text>
   <circle cx="30" cy="116" r="5" fill="#B4B4B4"/>
-  <text x="41" y="120" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="12.5" fill="#D1D1D1">Lua <tspan fill="#8E8E8E">4.3%</tspan></text>
+  <text x="41" y="120" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="12.5" fill="#D1D1D1">PLpgSQL <tspan fill="#8E8E8E">5.1%</tspan></text>
   <circle cx="175" cy="116" r="5" fill="#A1A1A1"/>
-  <text x="186" y="120" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="12.5" fill="#D1D1D1">CSS <tspan fill="#8E8E8E">2.8%</tspan></text>
+  <text x="186" y="120" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="12.5" fill="#D1D1D1">Lua <tspan fill="#8E8E8E">3.4%</tspan></text>
   <circle cx="320" cy="116" r="5" fill="#8E8E8E"/>
-  <text x="331" y="120" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="12.5" fill="#D1D1D1">Python <tspan fill="#8E8E8E">2.8%</tspan></text>
+  <text x="331" y="120" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="12.5" fill="#D1D1D1">CSS <tspan fill="#8E8E8E">2.2%</tspan></text>
   <circle cx="30" cy="140" r="5" fill="#6E6E6E"/>
-  <text x="41" y="144" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="12.5" fill="#D1D1D1">PLpgSQL <tspan fill="#8E8E8E">2.3%</tspan></text>
+  <text x="41" y="144" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="12.5" fill="#D1D1D1">Python <tspan fill="#8E8E8E">2.2%</tspan></text>
   <circle cx="175" cy="140" r="5" fill="#585858"/>
-  <text x="186" y="144" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="12.5" fill="#D1D1D1">Ruby <tspan fill="#8E8E8E">1.2%</tspan></text>
+  <text x="186" y="144" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="12.5" fill="#D1D1D1">Shell <tspan fill="#8E8E8E">1.0%</tspan></text>
 </svg>
