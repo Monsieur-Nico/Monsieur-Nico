@@ -61,7 +61,7 @@ I started out building a Discord bot that grew to 2.7M+ users, which pulled me d
 <p align="center">
   <img src="https://github-readme-stats-kappa-black-90.vercel.app/api?username=Monsieur-Nico&show_icons=true&hide_title=true&count_private=true&include_all_commits=true&bg_color=1C1C1C&border_color=3A3A3A&text_color=D1D1D1&icon_color=8E8E8E&ring_color=F0F0F0&title_color=FFFFFF" alt="Nicolas Alkhoury's GitHub stats: stars, commits, pull requests, issues and contributions" height="165" />
   &nbsp;
-  <img src="assets/languages.svg" alt="Nicolas Alkhoury's most used languages: TypeScript 55.8%, JavaScript 24.2%, HTML 6.1%, PLpgSQL 5.1%, Lua 3.4%, CSS 2.2%, Python 2.2%, Shell 1.0%" height="165" />
+  <img src="assets/languages.svg" alt="Nicolas Alkhoury's most used languages: TypeScript 57.5%, JavaScript 22.3%, PLpgSQL 5.8%, HTML 5.6%, Lua 3.1%, CSS 2.3%, Python 2.0%, Shell 1.3%" height="165" />
 </p>
 
 <p align="center">
