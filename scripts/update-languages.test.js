@@ -14,6 +14,13 @@ test("topLanguages sums across repos, keeps the top N and normalizes to them", (
   assert.deepEqual(langs.map((l) => l.pct), ["70.0%", "20.0%", "10.0%"]);
 });
 
+test("topLanguages skips repos that report no languages", () => {
+  const langs = topLanguages([repo({}), repo({ Python: 300, Shell: 100 }), repo({})], 3);
+
+  assert.deepEqual(langs.map((l) => l.name), ["Python", "Shell"]);
+  assert.deepEqual(langs.map((l) => l.pct), ["75.0%", "25.0%"]);
+});
+
 test("renderSvg draws one bar segment and legend entry per language across the full bar", () => {
   const langs = topLanguages([repo({ TypeScript: 700, Lua: 200, CSS: 100 })], 3);
   const svg = renderSvg(langs);
