@@ -58,7 +58,7 @@ const MOTION = `
     @keyframes grow { from { transform: scaleY(0); } }
     @keyframes pop { 0% { opacity: 0; transform: scale(0); } 70% { transform: scale(1.3); } }
     @keyframes pulse { 50% { opacity: 0.45; } }
-    .rise, .tile, .building, .goal { animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+    .rise, .tile, .building, .goal, .repo { animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
     .fade, .segment, .hour { animation: fade 0.6s ease-out both; }
     .line { animation: draw 1.8s cubic-bezier(0.45, 0, 0.2, 1) both; }
     .progress { animation: sweep 1.5s cubic-bezier(0.45, 0, 0.2, 1) 0.3s both; }
@@ -126,4 +126,63 @@ function card({ width, height, iconName, title, kicker, label, defs, aside = [],
   });
 }
 
-module.exports = { FONT, ICONS, GRADIENTS, MOTION, delay, icon, svg, card };
+const esc = (s) =>
+  String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+
+// ---------- Light mode ----------
+
+// Every card is drawn in grays only, so a light version is a remap of each
+// gray: dark surfaces to near-white, white marks to near-black, mid-grays to
+// GitHub-like light-theme tones that keep text above 4.5:1. Points are
+// [dark gray, light gray], interpolated in between.
+const LIGHT_STOPS = [
+  [0x0c, 0xff],
+  [0x1a, 0xf6],
+  [0x26, 0xee],
+  [0x33, 0xe1],
+  [0x3a, 0xd0],
+  [0x48, 0xc4],
+  [0x63, 0xa3],
+  [0x6e, 0x91],
+  [0x8e, 0x59],
+  [0xa1, 0x48],
+  [0xd1, 0x31],
+  [0xf0, 0x1f],
+  [0xff, 0x1a],
+];
+
+function lightGray(g) {
+  if (g <= LIGHT_STOPS[0][0]) return LIGHT_STOPS[0][1];
+  for (let i = 1; i < LIGHT_STOPS.length; i++) {
+    const [x1, y1] = LIGHT_STOPS[i];
+    const [x0, y0] = LIGHT_STOPS[i - 1];
+    if (g <= x1) return y0 + ((g - x0) * (y1 - y0)) / (x1 - x0);
+  }
+  return LIGHT_STOPS.at(-1)[1];
+}
+
+function toLight(svg) {
+  return svg.replace(/#([0-9a-fA-F]{6})\b/g, (match, hex) => {
+    const [r, g, b] = [0, 2, 4].map((i) => parseInt(hex.slice(i, i + 2), 16));
+    if (r !== g || g !== b) return match;
+    const v = Math.round(lightGray(r)).toString(16).padStart(2, "0").toUpperCase();
+    return `#${v}${v}${v}`;
+  });
+}
+
+const lightName = (file) => file.replace(/\.svg$/, "-light.svg");
+
+// Wraps each card's <img> in a <picture> whose light-theme source is its
+// -light twin. Cards already wrapped are left alone, so it is safe to rerun.
+function themeReadme(readme, files) {
+  let out = readme;
+  for (const file of files) {
+    const light = lightName(file);
+    if (out.includes(`srcset="assets/${light}"`)) continue;
+    const pattern = new RegExp(`<img src="assets/${file.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}"[^>]*>`);
+    out = out.replace(pattern, (img) => `<picture><source media="(prefers-color-scheme: light)" srcset="assets/${light}">${img}</picture>`);
+  }
+  return out;
+}
+
+module.exports = { FONT, ICONS, GRADIENTS, MOTION, delay, icon, svg, card, esc, toLight, lightName, themeReadme };

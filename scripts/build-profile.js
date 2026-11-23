@@ -5,7 +5,7 @@
 
 const fs = require("fs");
 const path = require("path");
-const { FONT, ICONS, delay, icon, svg, card } = require("./svg-kit");
+const { FONT, ICONS, delay, icon, svg, card, esc, toLight, lightName, themeReadme } = require("./svg-kit");
 const BRANDS = require("./brand-icons");
 
 const ASSETS = path.join(__dirname, "..", "assets");
@@ -15,6 +15,9 @@ const PROFILE = {
   role: "Full-Stack Developer • AI Toolmaker",
   tagline: "Web apps end to end — front end, back end, and the AI in between.",
   location: "Ottawa, Canada",
+  // Shown as a pulsing badge on the banner; also sets the contact card's wording. Set to null to hide.
+  availability: "Available for projects",
+  email: "info@nicoscript.com",
   buttons: [
     { file: "btn-portfolio.svg", label: "Portfolio", icon: "globe", primary: true },
     { file: "btn-linkedin.svg", label: "LinkedIn", icon: "linkedin" },
@@ -124,9 +127,6 @@ const PROFILE = {
   ],
 };
 
-const esc = (s) =>
-  String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
-
 // Matches the original stack card: 40px of padding plus about 9.6px per character at 16px.
 const pillWidth = (label) => Math.round(40 + 9.6 * label.length);
 const tagWidth = (label) => Math.round(26 + 7.2 * label.length);
@@ -141,6 +141,20 @@ function sheen({ width, height, rx, band, size, wait, id = "frame", gradient = "
 
 const ping = (cx, cy, r, wait, stroke = "#FFFFFF") =>
   `  <circle class="ping"${delay(wait)} cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${stroke}" stroke-width="1.5" opacity="0"/>`;
+
+// A brighter pill beside the location, with a live dot, while taking on work.
+function availabilityBadge(text) {
+  if (!text) return [];
+  const width = Math.round(46 + 7.9 * text.length);
+  return [
+    `  <g class="rise"${delay(950)}>`,
+    `    <rect x="438" y="288" width="${width}" height="34" rx="17" fill="#ffffff" fill-opacity="0.1" stroke="#8E8E8E"/>`,
+    `    <circle cx="460" cy="305" r="4.5" fill="#FFFFFF"/>`,
+    `  ${ping(460, 305, 4.5, 1400)}`,
+    `    <text x="476" y="310" ${FONT} font-size="15" font-weight="600" fill="#FFFFFF">${esc(text)}</text>`,
+    `  </g>`,
+  ];
+}
 
 function renderBanner(p) {
   const shine = sheen({ width: 1200, height: 360, rx: 24, band: 300, size: "l", wait: 2600 });
@@ -183,6 +197,7 @@ function renderBanner(p) {
       `  ${ping(272, 305, 4.5, 2000, "#D1D1D1")}`,
       `    <text x="288" y="310" ${FONT} font-size="15" fill="#F0F0F0">${esc(p.location)}</text>`,
       `  </g>`,
+      ...availabilityBadge(p.availability),
       shine.body,
       `  <g clip-path="url(#frame)"><rect y="352" width="1200" height="8" fill="url(#bar)"/></g>`,
     ],
@@ -455,6 +470,37 @@ function renderGoals(goals) {
   });
 }
 
+// The closing call to action. The README links the whole card to your email.
+function renderContact(p) {
+  const [kicker, headline, line] = p.availability
+    ? ["LET'S WORK TOGETHER", "Have a project in mind?", "I design and build web apps end to end. Tell me what you're working on."]
+    : ["GET IN TOUCH", "Let's talk", "Questions, ideas or just saying hi: my inbox is open."];
+  const shine = sheen({ width: 1200, height: 220, rx: 22, band: 300, size: "l", wait: 2200 });
+  const button = { x: 812, y: 82, w: 344, h: 56 };
+  return svg({
+    width: 1200,
+    height: 220,
+    title: "Get in touch",
+    label: `${esc(headline)} Email ${esc(p.email)}`,
+    defs: `${PANEL}${shine.defs}`,
+    body: [
+      `  <rect x="1" y="1" width="1198" height="218" rx="22" fill="url(#panel)" stroke="#3A3A3A" stroke-width="2"/>`,
+      `  <circle cx="52" cy="62" r="4.5" fill="#FFFFFF"/>`,
+      ping(52, 62, 4.5, 1200),
+      `  <text class="fade" x="68" y="67" ${FONT} font-size="12" font-weight="700" letter-spacing="3" fill="#8E8E8E">${esc(kicker)}</text>`,
+      `  <text class="rise"${delay(150)} x="44" y="122" ${FONT} font-size="38" font-weight="800" fill="url(#num)">${esc(headline)}</text>`,
+      `  <text class="rise"${delay(300)} x="44" y="160" ${FONT} font-size="18" fill="#A1A1A1">${esc(line)}</text>`,
+      `  <g class="rise"${delay(450)}>`,
+      `    <rect x="${button.x}" y="${button.y}" width="${button.w}" height="${button.h}" rx="28" fill="#FFFFFF"/>`,
+      `    ${icon("mail", button.x + 26, button.y + 16, 1, "#0C0C0C")}`,
+      `    <text x="${button.x + 62}" y="${button.y + 35}" ${FONT} font-size="19" font-weight="700" fill="#0C0C0C">${esc(p.email)}</text>`,
+      `    <text class="nudge" x="${button.x + button.w - 26}" y="${button.y + 35}" text-anchor="end" ${FONT} font-size="19" font-weight="700" fill="#0C0C0C">→</text>`,
+      `  </g>`,
+      shine.body,
+    ],
+  });
+}
+
 function buildCards(p) {
   return [
     ["banner.svg", renderBanner(p)],
@@ -466,11 +512,18 @@ function buildCards(p) {
     ["stack.svg", renderStack(p.stack)],
     ["experience.svg", renderExperience(p.experience)],
     ["goals.svg", renderGoals(p.goals)],
+    ["contact.svg", renderContact(p)],
   ];
 }
 
 if (require.main === module) {
-  for (const [file, content] of buildCards(PROFILE)) fs.writeFileSync(path.join(ASSETS, file), content);
+  const cards = buildCards(PROFILE);
+  for (const [file, content] of cards) {
+    fs.writeFileSync(path.join(ASSETS, file), content);
+    fs.writeFileSync(path.join(ASSETS, lightName(file)), toLight(content));
+  }
+  const readmePath = path.join(ASSETS, "..", "README.md");
+  fs.writeFileSync(readmePath, themeReadme(fs.readFileSync(readmePath, "utf8"), cards.map(([file]) => file)));
   console.log("Built the README cards in assets/");
 }
 

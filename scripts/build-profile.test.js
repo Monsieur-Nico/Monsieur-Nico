@@ -21,6 +21,7 @@ test("buildCards draws every static README card", () => {
     "card-self-education.svg",
     "card-textconvert.svg",
     "card-toolfurnace.svg",
+    "contact.svg",
     "experience.svg",
     "goals.svg",
     "stack.svg",
@@ -30,6 +31,14 @@ test("buildCards draws every static README card", () => {
 
 test("the README shows every generated card", () => {
   for (const file of Object.keys(byFile)) assert.match(readme, new RegExp(`src="assets/${file.replace(".", "\\.")}"`));
+});
+
+test("the README switches every card to its light twin on GitHub's light theme", () => {
+  for (const file of Object.keys(byFile)) {
+    const light = file.replace(".svg", "-light.svg");
+    assert.match(readme, new RegExp(`srcset="assets/${light.replace(".", "\\.")}"><img src="assets/${file.replace(".", "\\.")}"`));
+    assert.ok(fs.existsSync(path.join(__dirname, "..", "assets", light)), `${light} is missing`);
+  }
 });
 
 test("every card animates, describes itself and holds still for reduced motion", () => {
@@ -48,6 +57,20 @@ test("cards keep their content", () => {
   assert.match(byFile["experience.svg"], /·  Rok Commander</);
   assert.match(byFile["stack.svg"], />Automation pipelines</);
   assert.match(byFile["card-toolfurnace.svg"], />toolfurnace\.com<\/text>\s*<text class="nudge"[^>]*>→</);
+});
+
+test("the banner shows the availability badge only when it's set", () => {
+  assert.match(byFile["banner.svg"], />Available for projects</);
+  const off = Object.fromEntries(buildCards({ ...PROFILE, availability: null }));
+  assert.doesNotMatch(off["banner.svg"], /Available for projects/);
+});
+
+test("the contact card invites work when available and links to email from the README", () => {
+  assert.match(byFile["contact.svg"], />Have a project in mind\?</);
+  assert.match(byFile["contact.svg"], />info@nicoscript\.com</);
+  const off = Object.fromEntries(buildCards({ ...PROFILE, availability: null }));
+  assert.match(off["contact.svg"], />Let&#39;s talk</);
+  assert.match(readme, /<a href="mailto:info@nicoscript\.com"><picture>[^\n]*assets\/contact\.svg/);
 });
 
 test("pillWidth sizes tech pills to their label like the original stack card", () => {

@@ -7,7 +7,7 @@
 const fs = require("fs");
 const path = require("path");
 const { execFileSync } = require("child_process");
-const { FONT, delay, icon, svg, card } = require("./svg-kit");
+const { FONT, delay, icon, svg, card, esc, toLight, lightName, themeReadme } = require("./svg-kit");
 
 const ROOT = path.join(__dirname, "..");
 const ASSETS = path.join(ROOT, "assets");
@@ -42,10 +42,20 @@ const PROFILE_QUERY = `
 query {
   viewer {
     id
+    login
     followers { totalCount }
     pullRequests { totalCount }
     issues { totalCount }
     contributionsCollection { contributionYears }
+  }
+}`;
+
+const RECENT_QUERY = `
+query {
+  viewer {
+    repositories(first: 6, privacy: PUBLIC, isFork: false, ownerAffiliations: OWNER, orderBy: { field: PUSHED_AT, direction: DESC }) {
+      nodes { name description pushedAt stargazerCount primaryLanguage { name } }
+    }
   }
 }`;
 
@@ -142,6 +152,7 @@ function collectStats(now) {
 
   return {
     days,
+    recent: recentRepos(gh(RECENT_QUERY).viewer.repositories.nodes, profile.login),
     rhythm: commitRhythm(fetchCommitTimes(profile.id, now)),
     langs: topLanguages(repos),
     activity: {
@@ -711,6 +722,43 @@ function renderRhythmSvg({ hours, weekdays }) {
   });
 }
 
+// Your latest public work, newest first. The profile repo is left out: the
+// nightly card update pushes to it, so it would always come first.
+const recentRepos = (nodes, login, count = 3) => nodes.filter((r) => r.name !== login).slice(0, count);
+
+// Cuts text to one line at a word boundary.
+function clip(text, max = 108) {
+  if (text.length <= max) return text;
+  return `${text.slice(0, max - 1).replace(/s+S*$/, "")}…`;
+}
+
+function renderRecentSvg(repos, thisYear) {
+  const rows = repos.flatMap((repo, i) => {
+    const y = 108 + 66 * i;
+    const meta = [repo.primaryLanguage?.name, `★ ${formatNumber(repo.stargazerCount)}`].filter(Boolean).join(" · ");
+    return [
+      `  <g class="repo"${delay(150 + 120 * i)}>`,
+      `    <rect x="28" y="${y}" width="1144" height="54" rx="14" fill="#ffffff" fill-opacity="0.03" stroke="#3A3A3A"/>`,
+      `    ${icon("repo", 46, y + 18, 0.75, "#8E8E8E")}`,
+      `    <text x="76" y="${y + 23}" ${FONT} font-size="16" font-weight="700" fill="#FFFFFF">${esc(repo.name)}</text>`,
+      `    <text class="about" x="76" y="${y + 42}" ${FONT} font-size="13.5" fill="#8E8E8E">${esc(clip(repo.description || ""))}</text>`,
+      `    <text x="1148" y="${y + 23}" text-anchor="end" ${FONT} font-size="13" font-weight="600" fill="#D1D1D1">${formatDate(repo.pushedAt.slice(0, 10), thisYear)}</text>`,
+      `    <text x="1148" y="${y + 42}" text-anchor="end" ${FONT} font-size="12.5" fill="#8E8E8E">${esc(meta)}</text>`,
+      `  </g>`,
+      `  <rect class="spot"${delay(2400 + 900 * i)} x="28" y="${y}" width="1144" height="54" rx="14" fill="#FFFFFF" fill-opacity="0.04" stroke="#FFFFFF" stroke-opacity="0.5" opacity="0"/>`,
+    ];
+  });
+  return card({
+    width: 1200,
+    height: 112 + 66 * repos.length,
+    iconName: "activity",
+    title: "Lately",
+    kicker: "RECENTLY UPDATED PUBLIC REPOS",
+    label: `Recently updated public repos: ${repos.map((r) => `${esc(r.name)} (${formatDate(r.pushedAt.slice(0, 10), thisYear)})`).join(", ")}`,
+    body: rows,
+  });
+}
+
 function setAlt(readme, file, alt) {
   const escaped = file.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const pattern = new RegExp(`(<img src="assets/${escaped}" alt=")[^"]*(")`);
@@ -721,7 +769,7 @@ function setAlt(readme, file, alt) {
 if (require.main === module) {
   const now = new Date();
   const thisYear = now.getUTCFullYear();
-  const { days, rhythm, langs, activity, streak } = collectStats(now);
+  const { days, recent, rhythm, langs, activity, streak } = collectStats(now);
 
   const statsPath = path.join(ASSETS, "stats.json");
   const previous = fs.existsSync(statsPath) ? JSON.parse(fs.readFileSync(statsPath, "utf8")) : null;
@@ -735,13 +783,15 @@ if (require.main === module) {
     ["rhythm.svg", renderRhythmSvg(rhythm)],
     ["github-activity.svg", renderActivitySvg(activity)],
     ["languages.svg", renderLanguagesSvg(langs)],
+    ["recent.svg", renderRecentSvg(recent, thisYear)],
   ];
   let readme = fs.readFileSync(README_PATH, "utf8");
   for (const [file, content] of cards) {
     fs.writeFileSync(path.join(ASSETS, file), content);
+    fs.writeFileSync(path.join(ASSETS, lightName(file)), toLight(content));
     readme = setAlt(readme, file, content.match(/aria-label="([^"]*)"/)[1]);
   }
-  fs.writeFileSync(README_PATH, readme);
+  fs.writeFileSync(README_PATH, themeReadme(readme, cards.map(([file]) => file)));
   fs.writeFileSync(statsPath, `${JSON.stringify(totals, null, 2)}\n`);
   console.log(cards.map(([file]) => file).join(", "));
 }
@@ -766,4 +816,6 @@ module.exports = {
   setAlt,
   assertPrivateVisible,
   assertNoDrop,
+  recentRepos,
+  renderRecentSvg,
 };

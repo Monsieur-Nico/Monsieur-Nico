@@ -20,6 +20,8 @@ const {
   setAlt,
   assertPrivateVisible,
   assertNoDrop,
+  recentRepos,
+  renderRecentSvg,
 } = require("./update-cards");
 
 const repo = (langs) => ({
@@ -330,6 +332,55 @@ test("assertNoDrop stops a run whose all-time totals fall, the sign of a token w
   assert.doesNotThrow(() => assertNoDrop(before, { ...before, commits: 4200 }));
   assert.doesNotThrow(() => assertNoDrop(before, { ...before, contributions: 5600 }));
   assert.doesNotThrow(() => assertNoDrop(null, before));
+});
+
+const node = (name, pushedAt, extra = {}) => ({
+  name,
+  pushedAt,
+  description: `${name} does things`,
+  stargazerCount: 0,
+  primaryLanguage: { name: "TypeScript" },
+  ...extra,
+});
+
+test("recentRepos skips the profile repo and keeps the three most recently pushed", () => {
+  const nodes = [
+    node("Monsieur-Nico", "2026-11-23T06:00:00Z"),
+    node("textConvert", "2026-11-21T10:00:00Z"),
+    node("how-i-made", "2026-11-16T10:00:00Z"),
+    node("textconvert-refcheck", "2026-10-30T10:00:00Z"),
+    node("FS25_HomeSpots", "2026-09-29T10:00:00Z"),
+  ];
+
+  assert.deepEqual(recentRepos(nodes, "Monsieur-Nico").map((r) => r.name), ["textConvert", "how-i-made", "textconvert-refcheck"]);
+});
+
+test("renderRecentSvg lists each repo with its description, language, stars and last update", () => {
+  const svg = renderRecentSvg(
+    [
+      node("textConvert", "2026-11-21T10:00:00Z", { stargazerCount: 3, description: "Text tools & helpers for <TypeScript>" }),
+      node("how-i-made", "2025-12-30T10:00:00Z", { primaryLanguage: null, description: null }),
+    ],
+    2026
+  );
+
+  assert.equal((svg.match(/class="repo"/g) || []).length, 2);
+  assert.match(svg, />textConvert</);
+  assert.match(svg, />Text tools &amp; helpers for &lt;TypeScript&gt;</);
+  assert.match(svg, />Nov 21</);
+  assert.match(svg, />Dec 30, 2025</);
+  assert.match(svg, />TypeScript · ★ 3</);
+  assert.match(svg, />★ 0</);
+  assert.match(svg, /viewBox="0 0 1200 244"/);
+});
+
+test("renderRecentSvg shortens long descriptions to one line", () => {
+  const long = "word ".repeat(60).trim();
+  const svg = renderRecentSvg([node("x", "2026-11-21T10:00:00Z", { description: long })], 2026);
+  const shown = svg.match(/class="about"[^>]*>([^<]*)</)[1];
+
+  assert.ok(shown.length <= 110, `${shown.length} characters`);
+  assert.ok(shown.endsWith("…"));
 });
 
 test("setAlt swaps the alt text of the image with the given source", () => {
