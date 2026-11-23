@@ -58,14 +58,17 @@ I started out building a Discord bot that grew to 2.7M+ users, which pulled me d
 
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/white/bar-chart.svg"><img src="assets/icons/black/bar-chart.svg" width="22" height="22" align="absmiddle" alt="" /></picture>&nbsp; GitHub Stats
 
-<p align="center">
-  <img src="https://github-readme-stats-kappa-black-90.vercel.app/api?username=Monsieur-Nico&show_icons=true&hide_title=true&count_private=true&include_all_commits=true&bg_color=1C1C1C&border_color=3A3A3A&text_color=D1D1D1&icon_color=8E8E8E&ring_color=F0F0F0&title_color=FFFFFF" alt="Nicolas Alkhoury's GitHub stats: stars, commits, pull requests, issues and contributions" height="165" />
-  &nbsp;
-  <img src="assets/languages.svg" alt="Nicolas Alkhoury's most used languages: TypeScript 64.5%, JavaScript 16.9%, PLpgSQL 4.5%, HTML 4.3%, Python 4.1%, Lua 2.3%, CSS 2.1%, Shell 1.3%" height="165" />
-</p>
+<p align="center"><img src="assets/streak.svg" alt="GitHub contribution streak: 5,505 contributions since 2020, current streak 85 days (Aug 31 – Nov 23), longest streak 85 days (Aug 31 – Nov 23)" width="100%" /></p>
+
+<p align="center"><img src="assets/skyline.svg" alt="Contribution skyline, one building per day over the last 12 months. Best day: 155 contributions on Sep 8" width="100%" /></p>
+
+<p align="center"><img src="assets/contributions.svg" alt="Contribution activity over the last 12 months: 3,556 contributions, best week 576" width="100%" /></p>
+
+<p align="center"><img src="assets/rhythm.svg" alt="When I code, from 2,381 commits over the last 12 months: Evening coder, peaks at 6 PM · busiest on Saturdays" width="100%" /></p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=Monsieur-Nico&background=1C1C1C&border=3A3A3A&stroke=3A3A3A&ring=F0F0F0&fire=F0F0F0&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=D1D1D1&sideLabels=8E8E8E&dates=8E8E8E" alt="Nicolas Alkhoury's GitHub contribution streak: total contributions, current streak and longest streak" />
+  <img src="assets/github-activity.svg" alt="GitHub activity, all time: 4,230 commits, 535 pull requests, 628 issues, 30 code reviews, 5 stars earned, 64 repositories. Rank A-, top 35%" width="49%" />
+  <img src="assets/languages.svg" alt="Most used languages: TypeScript 63.1%, JavaScript 16.3%, Python 6.5%, PLpgSQL 4.4%, HTML 4.1%, Lua 2.2%, CSS 2.1%, Shell 1.3%" width="49%" />
 </p>
 
 ---
