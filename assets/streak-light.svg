@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 194" width="1200" height="194" role="img" aria-label="GitHub contribution streak: 5,528 contributions since 2020, current streak 85 days (Aug 31 – Nov 23), longest streak 85 days (Aug 31 – Nov 23)">
+  <title>Contribution streak</title>
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F6F6F6"/>
+      <stop offset="1" stop-color="#EEEEEE"/>
+    </linearGradient>
+    <linearGradient id="num" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1A1A1A"/>
+      <stop offset="1" stop-color="#484848"/>
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5"/></filter>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1A1A1A" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#1A1A1A" stop-opacity="0.09"/>
+      <stop offset="1" stop-color="#1A1A1A" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <style>
+    @keyframes rise { from { opacity: 0; transform: translateY(14px); } }
+    @keyframes fade { from { opacity: 0; } }
+    @keyframes draw { from { stroke-dashoffset: 1; } }
+    @keyframes sweep { 0% { stroke-dasharray: 0 100; opacity: 0; } 8% { opacity: 1; } }
+    @keyframes grow { from { transform: scaleY(0); } }
+    @keyframes pop { 0% { opacity: 0; transform: scale(0); } 70% { transform: scale(1.3); } }
+    @keyframes pulse { 50% { opacity: 0.45; } }
+    .rise, .tile, .building, .goal, .repo { animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+    .fade, .segment, .hour { animation: fade 0.6s ease-out both; }
+    .line { animation: draw 1.8s cubic-bezier(0.45, 0, 0.2, 1) both; }
+    .progress { animation: sweep 1.5s cubic-bezier(0.45, 0, 0.2, 1) 0.3s both; }
+    .day { transform-box: fill-box; transform-origin: bottom; animation: grow 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+    .pop { transform-box: fill-box; transform-origin: center; animation: pop 0.5s ease-out both; }
+    .pulse { animation: pulse 2.4s ease-in-out 2s infinite; }
+    @keyframes beam { 70%, 100% { transform: translateX(1700px); } }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes breathe { 0%, 100% { opacity: 0.2; } 50% { opacity: 0.75; } }
+    .beam { animation: beam 8s ease-in-out 2.4s infinite; }
+    .hand { transform-box: view-box; transform-origin: 210px 216px; animation: spin 10s linear infinite; }
+    .glow { animation: breathe 3.2s ease-in-out infinite; }
+    @keyframes shine-s { 30%, 100% { transform: translateX(290px); } }
+    @keyframes shine-m { 25%, 100% { transform: translateX(860px); } }
+    @keyframes shine-l { 25%, 100% { transform: translateX(1680px); } }
+    @keyframes nudge { 0%, 60%, 100% { transform: translateX(0); } 70% { transform: translateX(5px); } 80% { transform: translateX(0); } 90% { transform: translateX(3px); } }
+    @keyframes ping { 0% { opacity: 0.7; transform: scale(1); } 80%, 100% { opacity: 0; transform: scale(2.8); } }
+    @keyframes spot { 0%, 100% { opacity: 0; } 8% { opacity: 1; } 22% { opacity: 0; } }
+    @keyframes float { 50% { transform: translateY(-10px); } }
+    .shine-s { animation: shine-s 6s ease-in-out infinite both; }
+    .shine-m { animation: shine-m 11s ease-in-out infinite both; }
+    .shine-l { animation: shine-l 10s ease-in-out infinite both; }
+    .nudge { animation: nudge 3.5s ease-in-out 2s infinite; }
+    .ping { transform-box: fill-box; transform-origin: center; animation: ping 2.6s ease-out infinite; }
+    .spot { animation: spot 9s ease-in-out infinite; }
+    .float { animation: float 8s ease-in-out infinite; }
+    .spin { transform-box: view-box; animation: spin 16s linear infinite; }
+    @media (prefers-reduced-motion: reduce) { .hand, .comet, .beam { display: none; } .travel, .spin, .ping, .spot { display: none; } * { animation: none !important; } }
+  </style>
+  <g class="tile" style="animation-delay:0ms">
+    <rect x="1" y="11" width="384" height="172" rx="18" fill="url(#card)" stroke="#D0D0D0" stroke-width="2"/>
+    <g transform="translate(182 34) scale(0.9166666666666666)" fill="none" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></g>
+    <text x="193" y="106" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="42" font-weight="800" fill="url(#num)">5,528</text>
+    <text x="193" y="142" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" fill="#313131">contributions</text>
+    <text x="193" y="166" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="13.5" fill="#595959">since 2020</text>
+  </g>
+  <g class="tile" style="animation-delay:120ms">
+    <rect x="408" y="11" width="384" height="172" rx="18" fill="url(#card)" stroke="#D0D0D0" stroke-width="2"/>
+    <g class="fade" style="animation-delay:1800ms"><circle class="glow" cx="600" cy="76" r="42" fill="none" stroke="#1A1A1A" stroke-width="14" stroke-linecap="round" pathLength="100" stroke-dasharray="100.00 0.00" transform="rotate(-90 600 76)" filter="url(#soft)"/></g>
+    <circle cx="600" cy="76" r="42" fill="none" stroke="#1A1A1A" stroke-opacity="0.08" stroke-width="8"/>
+    <circle class="progress" cx="600" cy="76" r="42" fill="none" stroke="#1F1F1F" stroke-width="8" stroke-linecap="round" pathLength="100" stroke-dasharray="100.00 0.00" transform="rotate(-90 600 76)"/>
+    <circle cx="600" cy="34" r="14" fill="#F1F1F1"/>
+    <g class="pulse" transform="translate(593 27) scale(0.5833)" fill="none" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></g>
+    <text x="600" y="87" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="30" font-weight="800" fill="url(#num)">85</text>
+    <text x="600" y="142" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" fill="#313131">day streak</text>
+    <text x="600" y="166" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="13.5" fill="#595959">Aug 31 – Nov 23</text>
+  </g>
+  <g class="tile" style="animation-delay:240ms">
+    <rect x="815" y="11" width="384" height="172" rx="18" fill="url(#card)" stroke="#D0D0D0" stroke-width="2"/>
+    <g transform="translate(996 34) scale(0.9166666666666666)" fill="none" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></g>
+    <text x="1007" y="106" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="42" font-weight="800" fill="url(#num)">85 days</text>
+    <text x="1007" y="142" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" fill="#313131">longest streak</text>
+    <text x="1007" y="166" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="13.5" fill="#595959">Aug 31 – Nov 23</text>
+  </g>
+</svg>
