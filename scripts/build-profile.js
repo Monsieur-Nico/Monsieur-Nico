@@ -5,7 +5,8 @@
 
 const fs = require("fs");
 const path = require("path");
-const { FONT, delay, icon, svg, card } = require("./svg-kit");
+const { FONT, ICONS, delay, icon, svg, card } = require("./svg-kit");
+const BRANDS = require("./brand-icons");
 
 const ASSETS = path.join(__dirname, "..", "assets");
 
@@ -256,7 +257,7 @@ function renderAbout(a) {
     <linearGradient id="rule" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#636363"/></linearGradient>`,
     body: [
       `  <rect x="1" y="1" width="1198" height="194" rx="22" fill="url(#panel)" stroke="#3A3A3A" stroke-width="2"/>`,
-      `  <text class="float" style="animation-duration:7s" x="44" y="140" font-family="Georgia,'Times New Roman',serif" font-size="150" fill="#ffffff" fill-opacity="0.12">“</text>`,
+      `  <text x="44" y="140" font-family="Georgia,'Times New Roman',serif" font-size="150" fill="#ffffff" fill-opacity="0.12">“</text>`,
       `  <rect x="120" y="44" width="4" height="108" rx="2" fill="url(#rule)"/>`,
       // A spark of light running down the quote rule.
       `  <rect class="travel" x="119" y="44" width="6" height="26" rx="3" fill="#FFFFFF" opacity="0" filter="url(#soft)">`,
@@ -339,18 +340,42 @@ function renderProject(p, index) {
   });
 }
 
+// Outline stand-ins where no brand logo fits. VS Code's logo was withdrawn
+// from Simple Icons, and the AI items aren't brands.
+const STAND_INS = {
+  "VS Code": ICONS.code,
+  "AI APIs": `<rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/>`,
+  "Automation pipelines": `<polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/>`,
+};
+
+// A 17px logo centred on (cx, cy) inside a round badge. The badge gives solid
+// marks (TS, JS, Next.js) and line marks (Express, Cypress) the same footprint,
+// like the icon tiles on the other cards.
+function logo(item, cx, cy) {
+  const size = 17;
+  const badge = `<circle class="badge" cx="${cx}" cy="${cy}" r="14" fill="#FFFFFF" fill-opacity="0.09" stroke="#FFFFFF" stroke-opacity="0.14"/>`;
+  const place = `transform="translate(${cx - size / 2} ${cy - size / 2}) scale(${(size / 24).toFixed(4)})"`;
+  if (BRANDS[item]) return `${badge}<g class="logo" ${place} fill="#F0F0F0"><path d="${BRANDS[item]}"/></g>`;
+  if (STAND_INS[item]) {
+    return `${badge}<g class="logo" ${place} fill="none" stroke="#F0F0F0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">${STAND_INS[item]}</g>`;
+  }
+  throw new Error(`No logo for "${item}": add it to scripts/brand-icons.js or STAND_INS`);
+}
+
 function renderStack(stack) {
   const rows = stack.flatMap(([label, items], r) => {
     const y = 30 + 60 * r;
     let x = 230;
     const pills = items.flatMap((item, c) => {
-      const w = pillWidth(item);
+      // The label keeps its old padding; the logo adds 24px on the left.
+      const w = pillWidth(item) + 24;
       const at = x;
       x += w + 12;
       return [
         `  <g class="rise"${delay(80 * r + 60 * c)}>`,
         `    <rect x="${at}" y="${y}" width="${w}" height="40" rx="20" fill="#262626" stroke="#484848"/>`,
-        `    <text x="${at + w / 2}" y="${y + 25.5}" text-anchor="middle" ${FONT} font-size="16" font-weight="600" fill="#F0F0F0">${esc(item)}</text>`,
+        `    ${logo(item, at + 22, y + 20)}`,
+        `    <text x="${at + w / 2 + 12}" y="${y + 25.5}" text-anchor="middle" ${FONT} font-size="16" font-weight="600" fill="#F0F0F0">${esc(item)}</text>`,
         `  </g>`,
         // A wave of light that runs left to right across every row.
         `  <rect class="spot"${delay(2400 + ((at - 230) / 700) * 1600)} x="${at}" y="${y}" width="${w}" height="40" rx="20" fill="#FFFFFF" fill-opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.7" opacity="0"/>`,

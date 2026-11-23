@@ -56,6 +56,19 @@ test("pillWidth sizes tech pills to their label like the original stack card", (
   assert.equal(pillWidth("Automation pipelines"), 232);
 });
 
+test("every tech stack pill carries its logo in a round badge, in the card's light gray", () => {
+  const svg = byFile["stack.svg"];
+  const pills = PROFILE.stack.flatMap(([, items]) => items);
+
+  assert.equal((svg.match(/class="logo"/g) || []).length, pills.length);
+  assert.equal((svg.match(/class="badge"/g) || []).length, pills.length);
+  for (const logo of svg.match(/<g class="logo"[^>]*>/g)) assert.match(logo, /(fill|stroke)="#F0F0F0"/);
+});
+
+test("the about card's quote mark stays still", () => {
+  assert.doesNotMatch(byFile["about-intro.svg"], /class="float"[^>]*>“/);
+});
+
 test("project tags sit clear of the description", () => {
   for (const project of PROFILE.projects) {
     const svg = renderProject(project, 0);
