@@ -51,10 +51,7 @@ I started out building a Discord bot that grew to 2.7M+ users, which pulled me d
 
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/white/target.svg"><img src="assets/icons/black/target.svg" width="22" height="22" align="absmiddle" alt="" /></picture>&nbsp; 2026 Goals
 
-- [ ] Launch NicoScript Sites and onboard the first clients
-- [ ] Grow ToolFurnace into a self-sustaining traffic engine
-- [ ] Go deeper on API security and AI-driven automation pipelines
-- [ ] Grow NicoScript's client base and my personal brand
+<p align="center"><img src="assets/goals.svg" alt="2026 goals: launch NicoScript Sites and onboard the first clients; grow ToolFurnace into a self-sustaining traffic engine; go deeper on API security and AI-driven automation pipelines; grow NicoScript&#39;s client base and my personal brand" width="100%" /></p>
 
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/white/bar-chart.svg"><img src="assets/icons/black/bar-chart.svg" width="22" height="22" align="absmiddle" alt="" /></picture>&nbsp; GitHub Stats
 
