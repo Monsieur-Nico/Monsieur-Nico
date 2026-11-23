@@ -58,16 +58,16 @@ I started out building a Discord bot that grew to 2.7M+ users, which pulled me d
 
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/white/bar-chart.svg"><img src="assets/icons/black/bar-chart.svg" width="22" height="22" align="absmiddle" alt="" /></picture>&nbsp; GitHub Stats
 
-<p align="center"><img src="assets/streak.svg" alt="GitHub contribution streak: 5,505 contributions since 2020, current streak 85 days (Aug 31 – Nov 23), longest streak 85 days (Aug 31 – Nov 23)" width="100%" /></p>
+<p align="center"><img src="assets/streak.svg" alt="GitHub contribution streak: 5,096 contributions since 2020, current streak 85 days (Aug 31 – Nov 23), longest streak 85 days (Aug 31 – Nov 23)" width="100%" /></p>
 
 <p align="center"><img src="assets/skyline.svg" alt="Contribution skyline, one building per day over the last 12 months. Best day: 155 contributions on Sep 8" width="100%" /></p>
 
-<p align="center"><img src="assets/contributions.svg" alt="Contribution activity over the last 12 months: 3,556 contributions, best week 576" width="100%" /></p>
+<p align="center"><img src="assets/contributions.svg" alt="Contribution activity over the last 12 months: 3,560 contributions, best week 576" width="100%" /></p>
 
-<p align="center"><img src="assets/rhythm.svg" alt="When I code, from 2,381 commits over the last 12 months: Evening coder, peaks at 6 PM · busiest on Saturdays" width="100%" /></p>
+<p align="center"><img src="assets/rhythm.svg" alt="When I code, from 500 commits over the last 12 months: Night owl, peaks at 2 AM · busiest on Fridays" width="100%" /></p>
 
 <p align="center">
-  <img src="assets/github-activity.svg" alt="GitHub activity, all time: 4,230 commits, 535 pull requests, 628 issues, 30 code reviews, 5 stars earned, 64 repositories. Rank A-, top 35%" width="49%" />
+  <img src="assets/github-activity.svg" alt="GitHub activity, all time: 1,180 commits, 129 pull requests, 127 issues, 28 code reviews, 5 stars earned, 64 repositories. Rank B+, top 46%" width="49%" />
   <img src="assets/languages.svg" alt="Most used languages: TypeScript 63.1%, JavaScript 16.3%, Python 6.5%, PLpgSQL 4.4%, HTML 4.1%, Lua 2.2%, CSS 2.1%, Shell 1.3%" width="49%" />
 </p>
 

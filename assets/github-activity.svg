@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 590 274" width="590" height="274" role="img" aria-label="GitHub activity, all time: 4,230 commits, 535 pull requests, 628 issues, 30 code reviews, 5 stars earned, 64 repositories. Rank A-, top 35%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 590 274" width="590" height="274" role="img" aria-label="GitHub activity, all time: 1,180 commits, 129 pull requests, 127 issues, 28 code reviews, 5 stars earned, 64 repositories. Rank B+, top 46%">
   <title>GitHub activity</title>
   <defs>
     <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
@@ -37,22 +37,22 @@
   <g class="rise" style="animation-delay:0ms">
     <g transform="translate(28 116) scale(0.6667)" fill="none" stroke="#8E8E8E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><line x1="1.05" y1="12" x2="7" y2="12"/><line x1="17.01" y1="12" x2="22.96" y2="12"/></g>
     <text x="54" y="129" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="15" fill="#D1D1D1">Commits</text>
-    <text x="336" y="129" text-anchor="end" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">4,230</text>
+    <text x="336" y="129" text-anchor="end" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">1,180</text>
   </g>
   <g class="rise" style="animation-delay:80ms">
     <g transform="translate(28 141) scale(0.6667)" fill="none" stroke="#8E8E8E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 0 1 2 2v7"/><line x1="6" y1="9" x2="6" y2="21"/></g>
     <text x="54" y="154" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="15" fill="#D1D1D1">Pull requests</text>
-    <text x="336" y="154" text-anchor="end" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">535</text>
+    <text x="336" y="154" text-anchor="end" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">129</text>
   </g>
   <g class="rise" style="animation-delay:160ms">
     <g transform="translate(28 166) scale(0.6667)" fill="none" stroke="#8E8E8E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></g>
     <text x="54" y="179" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="15" fill="#D1D1D1">Issues</text>
-    <text x="336" y="179" text-anchor="end" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">628</text>
+    <text x="336" y="179" text-anchor="end" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">127</text>
   </g>
   <g class="rise" style="animation-delay:240ms">
     <g transform="translate(28 191) scale(0.6667)" fill="none" stroke="#8E8E8E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></g>
     <text x="54" y="204" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="15" fill="#D1D1D1">Code reviews</text>
-    <text x="336" y="204" text-anchor="end" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">30</text>
+    <text x="336" y="204" text-anchor="end" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">28</text>
   </g>
   <g class="rise" style="animation-delay:320ms">
     <g transform="translate(28 216) scale(0.6667)" fill="none" stroke="#8E8E8E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></g>
@@ -66,7 +66,7 @@
   </g>
   <line x1="372" x2="372" y1="114" y2="252" stroke="#ffffff" stroke-opacity="0.08"/>
   <circle cx="467" cy="172" r="54" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="11"/>
-  <circle class="progress" cx="467" cy="172" r="54" fill="none" stroke="#F0F0F0" stroke-width="11" stroke-linecap="round" pathLength="100" stroke-dasharray="65.01 34.99" transform="rotate(-90 467 172)"/>
-  <text class="pop" style="animation-delay:1500ms" x="467" y="186" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="38" font-weight="800" fill="url(#num)">A-</text>
-  <text class="fade" style="animation-delay:1700ms" x="467" y="254" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#8E8E8E">TOP 35%</text>
+  <circle class="progress" cx="467" cy="172" r="54" fill="none" stroke="#F0F0F0" stroke-width="11" stroke-linecap="round" pathLength="100" stroke-dasharray="54.13 45.87" transform="rotate(-90 467 172)"/>
+  <text class="pop" style="animation-delay:1500ms" x="467" y="186" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="38" font-weight="800" fill="url(#num)">B+</text>
+  <text class="fade" style="animation-delay:1700ms" x="467" y="254" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#8E8E8E">TOP 46%</text>
 </svg>
