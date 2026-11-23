@@ -136,6 +136,9 @@ test("renderLanguagesSvg draws one donut segment and legend entry per language",
   const svg = renderLanguagesSvg(topLanguages([repo({ TypeScript: 700, Lua: 200, CSS: 100 })], 3));
 
   assert.equal((svg.match(/class="segment"/g) || []).length, 3);
+  // Filled wedges, not dashed strokes, so no slice can bleed past its end.
+  assert.equal((svg.match(/<path class="segment"/g) || []).length, 3);
+  assert.doesNotMatch(svg, /class="segment"[^>]*stroke-dasharray/);
   assert.equal((svg.match(/class="swatch"/g) || []).length, 3);
   assert.match(svg, />70%</);
   assert.match(svg, />TypeScript</);
@@ -147,7 +150,7 @@ test("renderLanguagesSvg merges languages under 3% into one donut slice that the
   const sizes = { TypeScript: 600, JavaScript: 200, Python: 100, HTML: 40, Lua: 25, CSS: 20, Shell: 15 };
   const svg = renderLanguagesSvg(topLanguages([repo(sizes)], 7));
 
-  const segments = [...svg.matchAll(/class="segment"[^>]* stroke="(#[0-9A-F]{6})"/g)].map((m) => m[1]);
+  const segments = [...svg.matchAll(/class="segment"[^>]* fill="(#[0-9A-F]{6})"/g)].map((m) => m[1]);
   assert.equal(segments.length, 5);
   const other = segments[4];
   const swatches = [...svg.matchAll(/class="swatch"[^>]* fill="(#[0-9A-F]{6})"/g)].map((m) => m[1]);

@@ -483,14 +483,36 @@ function renderLanguagesSvg(langs) {
     ...langs.slice(0, major).map((l, i) => ({ share: l.share, color: colorOf(i) })),
     ...(minorShare ? [{ share: minorShare, color: other }] : []),
   ];
-  const gap = slices.length > 1 ? 1 : 0;
-  let offset = 0;
+  // Each slice is a filled wedge between two radii. Trimming a fixed number of
+  // pixels (not degrees) off each end keeps every gap the same width, inside
+  // and out, and a filled shape can't bleed past its end the way a dashed
+  // stroke can.
+  const [outer, inner] = [r + width / 2, r - width / 2];
+  const trim = slices.length > 1 ? 1.75 : 0; // px off each end: a 3.5px gap
+  const point = (radius, turn) => [cx + radius * Math.sin(2 * Math.PI * turn), cy - radius * Math.cos(2 * Math.PI * turn)];
+  const f = (n) => n.toFixed(2);
+  let start = 0;
+  // One language fills the whole ring: two circles cut with evenodd, so there's no seam.
+  const ring = (radius, sweep) => `M${cx} ${cy - radius} A${radius} ${radius} 0 1 ${sweep} ${cx} ${cy + radius} A${radius} ${radius} 0 1 ${sweep} ${cx} ${cy - radius} Z`;
   const segments = slices.map((s, i) => {
-    const pct = s.share * 100;
-    const dash = Math.max(pct - gap, 0.2);
-    const segment = `  <circle class="segment"${delay(150 + 140 * i)} cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${s.color}" stroke-width="${width}" pathLength="100" stroke-dasharray="${dash.toFixed(2)} ${(100 - dash).toFixed(2)}" stroke-dashoffset="${(-offset).toFixed(2)}" transform="rotate(-90 ${cx} ${cy})"/>`;
-    offset += pct;
-    return segment;
+    if (slices.length === 1) {
+      return `  <path class="segment"${delay(150)} d="${ring(outer, 1)} ${ring(inner, 0)}" fill-rule="evenodd" fill="${s.color}"/>`;
+    }
+    const end = start + s.share;
+    const edge = (radius) => {
+      const cut = trim / (2 * Math.PI * radius);
+      const a = start + cut;
+      return [a, Math.max(a + 0.0005, end - cut)];
+    };
+    const [oa, ob] = edge(outer);
+    const [ia, ib] = edge(inner);
+    const large = (from, to) => (to - from > 0.5 ? 1 : 0);
+    const [p1, p2, p3, p4] = [point(outer, oa), point(outer, ob), point(inner, ib), point(inner, ia)];
+    const d =
+      `M${f(p1[0])} ${f(p1[1])} A${outer} ${outer} 0 ${large(oa, ob)} 1 ${f(p2[0])} ${f(p2[1])} ` +
+      `L${f(p3[0])} ${f(p3[1])} A${inner} ${inner} 0 ${large(ia, ib)} 0 ${f(p4[0])} ${f(p4[1])} Z`;
+    start += s.share;
+    return `  <path class="segment"${delay(150 + 140 * i)} d="${d}" fill="${s.color}"/>`;
   });
   const columns = [240, 408];
   const legend = langs.map((l, i) => {
