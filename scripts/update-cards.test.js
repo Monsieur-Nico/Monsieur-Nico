@@ -143,6 +143,19 @@ test("renderLanguagesSvg draws one donut segment and legend entry per language",
   assert.match(svg, /viewBox="0 0 590 274"/);
 });
 
+test("renderLanguagesSvg merges languages under 3% into one donut slice that their swatches share", () => {
+  const sizes = { TypeScript: 600, JavaScript: 200, Python: 100, HTML: 40, Lua: 25, CSS: 20, Shell: 15 };
+  const svg = renderLanguagesSvg(topLanguages([repo(sizes)], 7));
+
+  const segments = [...svg.matchAll(/class="segment"[^>]* stroke="(#[0-9A-F]{6})"/g)].map((m) => m[1]);
+  assert.equal(segments.length, 5);
+  const other = segments[4];
+  const swatches = [...svg.matchAll(/class="swatch"[^>]* fill="(#[0-9A-F]{6})"/g)].map((m) => m[1]);
+  assert.equal(swatches.length, 7);
+  assert.deepEqual(swatches.slice(4), [other, other, other]);
+  assert.ok(!swatches.slice(0, 4).includes(other));
+});
+
 test("renderStreakSvg shows totals, both streaks and their date ranges", () => {
   const svg = renderStreakSvg(
     {

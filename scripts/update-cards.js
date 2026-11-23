@@ -474,12 +474,21 @@ function renderActivitySvg(a) {
 
 function renderLanguagesSvg(langs) {
   const [cx, cy, r, width] = [124, 182, 60, 20];
-  const gap = langs.length > 1 ? 0.8 : 0;
+  // Slivers under 3% read as noise on the ring, so they share one "other" slice.
+  const major = Math.max(1, langs.filter((l) => l.share >= 0.03).length);
+  const other = COLORS[Math.min(major, COLORS.length - 2) + 1];
+  const colorOf = (i) => (i < major ? COLORS[i] : other);
+  const minorShare = langs.slice(major).reduce((acc, l) => acc + l.share, 0);
+  const slices = [
+    ...langs.slice(0, major).map((l, i) => ({ share: l.share, color: colorOf(i) })),
+    ...(minorShare ? [{ share: minorShare, color: other }] : []),
+  ];
+  const gap = slices.length > 1 ? 1 : 0;
   let offset = 0;
-  const segments = langs.map((l, i) => {
-    const pct = l.share * 100;
+  const segments = slices.map((s, i) => {
+    const pct = s.share * 100;
     const dash = Math.max(pct - gap, 0.2);
-    const segment = `  <circle class="segment"${delay(150 + 140 * i)} cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${COLORS[i]}" stroke-width="${width}" pathLength="100" stroke-dasharray="${dash.toFixed(2)} ${(100 - dash).toFixed(2)}" stroke-dashoffset="${(-offset).toFixed(2)}" transform="rotate(-90 ${cx} ${cy})"/>`;
+    const segment = `  <circle class="segment"${delay(150 + 140 * i)} cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${s.color}" stroke-width="${width}" pathLength="100" stroke-dasharray="${dash.toFixed(2)} ${(100 - dash).toFixed(2)}" stroke-dashoffset="${(-offset).toFixed(2)}" transform="rotate(-90 ${cx} ${cy})"/>`;
     offset += pct;
     return segment;
   });
@@ -489,7 +498,7 @@ function renderLanguagesSvg(langs) {
     const y = 134 + 34 * (i % 4);
     return [
       `  <g class="rise"${delay(200 + 90 * i)}>`,
-      `    <rect class="swatch" x="${x}" y="${y - 10}" width="11" height="11" rx="3" fill="${COLORS[i]}"/>`,
+      `    <rect class="swatch" x="${x}" y="${y - 10}" width="11" height="11" rx="3" fill="${colorOf(i)}"/>`,
       `    <text x="${x + 19}" y="${y}" ${FONT} font-size="14.5" fill="#D1D1D1">${l.name} <tspan fill="#8E8E8E">${l.pct}</tspan></text>`,
       `  </g>`,
     ].join("\n");
