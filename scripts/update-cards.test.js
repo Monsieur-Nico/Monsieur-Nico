@@ -19,6 +19,7 @@ const {
   renderSkylineSvg,
   setAlt,
   assertPrivateVisible,
+  assertNoDrop,
 } = require("./update-cards");
 
 const repo = (langs) => ({
@@ -288,6 +289,31 @@ test("every card animates on load and stays still for reduced motion", () => {
     assert.match(svg, /@keyframes/);
     assert.match(svg, /@media \(prefers-reduced-motion: reduce\)/);
   }
+});
+
+test("the skyline, chart, clock and rings keep moving after the intro, and hold still for reduced motion", () => {
+  const skyline = renderSkylineSvg(daysEndingNov23(371, 1), NO_STREAK_FOR_TEST, 2026);
+  const chart = renderContributionsSvg(daysEndingNov23(364, 1));
+  const rhythm = renderRhythmSvg({ hours: Array(24).fill(1), weekdays: Array(7).fill(1) });
+  const rankCard = renderActivitySvg(activity);
+
+  assert.match(skyline, /class="beam"/);
+  assert.match(chart, /<animateMotion[^>]*repeatCount="indefinite"[^>]*><mpath href="#trend"/);
+  assert.match(chart, /id="trend"/);
+  assert.match(rhythm, /class="hand"/);
+  assert.match(rankCard, /class="glow"/);
+  for (const svg of [skyline, chart, rhythm]) {
+    assert.match(svg, /prefers-reduced-motion: reduce\) \{[^}]*\.hand, \.comet, \.beam \{ display: none; \}/);
+  }
+});
+
+test("assertNoDrop stops a run whose all-time totals fall, the sign of a token without private access", () => {
+  const before = { commits: 4230, prs: 535, issues: 628, contributions: 5505 };
+
+  assert.throws(() => assertNoDrop(before, { ...before, commits: 1180, prs: 129 }), /commits.*4,230.*1,180/);
+  assert.doesNotThrow(() => assertNoDrop(before, { ...before, commits: 4200 }));
+  assert.doesNotThrow(() => assertNoDrop(before, { ...before, contributions: 5600 }));
+  assert.doesNotThrow(() => assertNoDrop(null, before));
 });
 
 test("setAlt swaps the alt text of the image with the given source", () => {

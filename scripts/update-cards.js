@@ -185,6 +185,22 @@ function assertPrivateVisible(repos) {
   }
 }
 
+// All-time totals only grow, give or take a deleted repo. A sharp fall means
+// the token can no longer see private activity, so publishing would wipe it.
+const TOTALS = ["commits", "prs", "issues", "contributions"];
+
+function assertNoDrop(previous, next) {
+  if (!previous) return;
+  for (const key of TOTALS) {
+    if (next[key] < previous[key] * 0.95) {
+      throw new Error(
+        `All-time ${key} fell from ${formatNumber(previous[key])} to ${formatNumber(next[key])}: ` +
+          "the token has probably lost access to private activity, so the cards were left unchanged"
+      );
+    }
+  }
+}
+
 // ---------- Calculations ----------
 
 function topLanguages(repos, count = COLORS.length) {
@@ -331,10 +347,13 @@ const GRADIENTS = `
     <linearGradient id="num" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#FFFFFF"/>
       <stop offset="1" stop-color="#A1A1A1"/>
-    </linearGradient>`;
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5"/></filter>`;
 
-// Plays once when the README loads. Every animation only sets a starting
-// state, so with motion reduced each element simply shows its final state.
+// The intro plays once when the README loads; README images can't tell when
+// they scroll into view, so the beam, comet, clock hand and glows keep moving
+// after it. Intro animations only set a starting state, so with motion
+// reduced every element shows its final state and the moving extras hide.
 const MOTION = `
   <style>
     @keyframes rise { from { opacity: 0; transform: translateY(14px); } }
@@ -351,7 +370,13 @@ const MOTION = `
     .day { transform-box: fill-box; transform-origin: bottom; animation: grow 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
     .pop { transform-box: fill-box; transform-origin: center; animation: pop 0.5s ease-out both; }
     .pulse { animation: pulse 2.4s ease-in-out 2s infinite; }
-    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    @keyframes beam { 70%, 100% { transform: translateX(1700px); } }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes breathe { 0%, 100% { opacity: 0.2; } 50% { opacity: 0.75; } }
+    .beam { animation: beam 8s ease-in-out 2.4s infinite; }
+    .hand { transform-box: view-box; transform-origin: 210px 216px; animation: spin 10s linear infinite; }
+    .glow { animation: breathe 3.2s ease-in-out infinite; }
+    @media (prefers-reduced-motion: reduce) { .hand, .comet, .beam { display: none; } * { animation: none !important; } }
   </style>`;
 
 const delay = (ms) => ` style="animation-delay:${Math.round(ms)}ms"`;
@@ -362,15 +387,17 @@ const icon = (name, x, y, scale = 1, stroke = "#FFFFFF", extra = "") =>
 // A ring drawn clockwise from 12 o'clock, filled to `share` (0 to 1).
 function ring({ cx, cy, r, width, share }) {
   const pct = Math.max(0, Math.min(1, share)) * 100;
+  const arc = `pathLength="100" stroke-dasharray="${pct.toFixed(2)} ${(100 - pct).toFixed(2)}" transform="rotate(-90 ${cx} ${cy})"`;
   return [
+    `  <g class="fade"${delay(1800)}><circle class="glow" cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#FFFFFF" stroke-width="${width + 6}" stroke-linecap="round" ${arc} filter="url(#soft)"/></g>`,
     `  <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="${width}"/>`,
-    `  <circle class="progress" cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#F0F0F0" stroke-width="${width}" stroke-linecap="round" pathLength="100" stroke-dasharray="${pct.toFixed(2)} ${(100 - pct).toFixed(2)}" transform="rotate(-90 ${cx} ${cy})"/>`,
+    `  <circle class="progress" cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#F0F0F0" stroke-width="${width}" stroke-linecap="round" ${arc}/>`,
   ];
 }
 
 function svg({ width, height, title, label, defs = "", body }) {
   return `<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" width="${width}" height="${height}" role="img" aria-label="${label}">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 ${width} ${height}" width="${width}" height="${height}" role="img" aria-label="${label}">
   <title>${title}</title>
   <defs>${GRADIENTS}${defs}
   </defs>${MOTION}
@@ -587,9 +614,15 @@ function renderContributionsSvg(days) {
     body: [
       ...grid,
       `  <path class="fade"${delay(900)} d="${area}" fill="url(#area)"/>`,
-      `  <path class="line"${delay(200)} d="${line}" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" pathLength="1" stroke-dasharray="1 2"/>`,
+      `  <path id="trend" class="line"${delay(200)} d="${line}" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" pathLength="1" stroke-dasharray="1 2"/>`,
       `  <circle class="pop"${delay(bestAt)} cx="${f(bx)}" cy="${f(by)}" r="5.5" fill="#FFFFFF" stroke="#1F1F1F" stroke-width="3"/>`,
       `  <text class="rise"${delay(bestAt + 150)} x="${f(labelX)}" y="${f(by - 14)}" text-anchor="middle" ${FONT} font-size="12.5" font-weight="700" fill="#FFFFFF">Best week: ${formatNumber(weeks[best].total)}</text>`,
+      `  <g class="comet" opacity="0">`,
+      `    <circle r="11" fill="#FFFFFF" opacity="0.18"/>`,
+      `    <circle r="4" fill="#FFFFFF"/>`,
+      `    <set attributeName="opacity" to="1" begin="2.2s" fill="freeze"/>`,
+      `    <animateMotion dur="7s" begin="2.2s" repeatCount="indefinite"><mpath href="#trend" xlink:href="#trend"/></animateMotion>`,
+      `  </g>`,
       ...months,
     ],
   });
@@ -658,7 +691,20 @@ function renderSkylineSvg(days, current, thisYear) {
     kicker: "LAST 12 MONTHS · ONE BUILDING PER DAY",
     label: `Contribution skyline, one building per day over the last 12 months. Best day: ${formatNumber(bestCell.count)} contributions on ${formatDate(bestCell.date, thisYear)}`,
     aside: headerFigure(1200, formatNumber(bestCell.count), `best day · ${formatDate(bestCell.date, thisYear)}`),
-    body: [...buildings, ...months, ...legend],
+    defs: `
+    <linearGradient id="beamLight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.11"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="inside"><rect x="2" y="94" width="1196" height="404" rx="19"/></clipPath>`,
+    body: [
+      ...buildings,
+      // A slanted band of light that sweeps across the city every few seconds.
+      `  <g clip-path="url(#inside)"><g class="beam"><rect x="-300" y="94" width="300" height="404" fill="url(#beamLight)" transform="skewX(-20)"/></g></g>`,
+      ...months,
+      ...legend,
+    ],
   });
 }
 
@@ -689,7 +735,9 @@ function renderRhythmSvg({ hours, weekdays }) {
     const h = Math.max(4, (tallest * n) / maxDay);
     const x = left + i * slot + (slot - barWidth) / 2;
     const name = WEEKDAYS[i].slice(0, 3);
+    const glow = `  <g class="fade"${delay(1600)}><rect class="glow" x="${f(x)}" y="${f(base - h)}" width="${barWidth}" height="${f(h)}" rx="8" fill="#FFFFFF" filter="url(#soft)"/></g>`;
     return [
+      ...(i === busiest ? [glow] : []),
       `  <rect class="day"${delay(300 + 90 * i)} x="${f(x)}" y="${f(base - h)}" width="${barWidth}" height="${f(h)}" rx="8" fill="${i === busiest ? "#FFFFFF" : "url(#bar)"}"/>`,
       `  <text class="fade"${delay(900 + 90 * i)} x="${f(x + barWidth / 2)}" y="${f(base - h - 10)}" text-anchor="middle" ${FONT} font-size="13" fill="#D1D1D1">${formatNumber(n)}</text>`,
       `  <text x="${f(x + barWidth / 2)}" y="316" text-anchor="middle" ${FONT} font-size="13" fill="#8E8E8E">${name}</text>`,
@@ -715,6 +763,7 @@ function renderRhythmSvg({ hours, weekdays }) {
       `  <circle cx="${cx}" cy="${cy}" r="${inner}" fill="none" stroke="#ffffff" stroke-opacity="0.06"/>`,
       `  <circle cx="${cx}" cy="${cy}" r="${outer}" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-dasharray="3 5"/>`,
       ...bars,
+      `  <g class="fade"${delay(1600)}><g class="hand"><line x1="${cx}" y1="${cy - inner}" x2="${cx}" y2="${cy - outer - 4}" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="2" stroke-linecap="round"/><circle cx="${cx}" cy="${cy - outer - 4}" r="3.5" fill="#FFFFFF"/></g></g>`,
       ...clockLabels,
       `  <text class="pop"${delay(1400)} x="${cx}" y="${cy + 5}" text-anchor="middle" ${FONT} font-size="13" font-weight="700" fill="#FFFFFF">${formatHour(p.peakHour)}</text>`,
       `  <line x1="410" x2="410" y1="112" y2="318" stroke="#ffffff" stroke-opacity="0.08"/>`,
@@ -737,6 +786,11 @@ if (require.main === module) {
   const thisYear = now.getUTCFullYear();
   const { days, rhythm, langs, activity, streak } = collectStats(now);
 
+  const statsPath = path.join(ASSETS, "stats.json");
+  const previous = fs.existsSync(statsPath) ? JSON.parse(fs.readFileSync(statsPath, "utf8")) : null;
+  const totals = { commits: activity.commits, prs: activity.prs, issues: activity.issues, contributions: streak.contributions };
+  assertNoDrop(previous, totals);
+
   const cards = [
     ["streak.svg", renderStreakSvg(streak, thisYear)],
     ["skyline.svg", renderSkylineSvg(days, streak.current, thisYear)],
@@ -751,6 +805,7 @@ if (require.main === module) {
     readme = setAlt(readme, file, content.match(/aria-label="([^"]*)"/)[1]);
   }
   fs.writeFileSync(README_PATH, readme);
+  fs.writeFileSync(statsPath, `${JSON.stringify(totals, null, 2)}\n`);
   console.log(cards.map(([file]) => file).join(", "));
 }
 
@@ -773,4 +828,5 @@ module.exports = {
   renderRhythmSvg,
   setAlt,
   assertPrivateVisible,
+  assertNoDrop,
 };
