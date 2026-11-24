@@ -39,7 +39,7 @@ I started out building a Discord bot that grew to 2.7M+ users, which pulled me d
   <a href="https://github.com/Monsieur-Nico/Self-Education-in-Computer-Science"><picture><source media="(prefers-color-scheme: light)" srcset="assets/card-self-education-light.svg"><img src="assets/card-self-education.svg" alt="Self-Education in Computer Science, open source: a low-cost, self-paced program to learn computer science course by course. View on GitHub." width="49%" /></picture></a>
 </p>
 
-<p align="center"><a href="https://github.com/Monsieur-Nico?tab=repositories"><picture><source media="(prefers-color-scheme: light)" srcset="assets/recent-light.svg"><img src="assets/recent.svg" alt="Recently updated public repos: textConvert (Nov 21), how-i-made (Nov 16), textconvert-refcheck (Oct 30)" width="100%" /></picture></a></p>
+<p align="center"><a href="https://github.com/Monsieur-Nico?tab=repositories"><picture><source media="(prefers-color-scheme: light)" srcset="assets/recent-light.svg"><img src="assets/recent.svg" alt="Recently updated public repos: textConvert (Nov 23), how-i-made (Nov 16), textconvert-refcheck (Oct 30)" width="100%" /></picture></a></p>
 
 <p align="center">More on my <a href="https://www.nicoscript.com/#projects">portfolio</a> →</p>
 
@@ -57,7 +57,7 @@ I started out building a Discord bot that grew to 2.7M+ users, which pulled me d
 
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/white/bar-chart.svg"><img src="assets/icons/black/bar-chart.svg" width="22" height="22" align="absmiddle" alt="" /></picture>&nbsp; GitHub Stats
 
-<p align="center"><picture><source media="(prefers-color-scheme: light)" srcset="assets/streak-light.svg"><img src="assets/streak.svg" alt="GitHub contribution streak: 5,530 contributions since 2020, current streak 85 days (Aug 31 – Nov 23), longest streak 85 days (Aug 31 – Nov 23)" width="100%" /></picture></p>
+<p align="center"><picture><source media="(prefers-color-scheme: light)" srcset="assets/streak-light.svg"><img src="assets/streak.svg" alt="GitHub contribution streak: 5,560 contributions since 2020, current streak 86 days (Aug 31 – Nov 24), longest streak 86 days (Aug 31 – Nov 24)" width="100%" /></picture></p>
 
 <p align="center"><picture><source media="(prefers-color-scheme: light)" srcset="assets/skyline-light.svg"><img src="assets/skyline.svg" alt="Contribution skyline, one building per day over the last 12 months. Best day: 155 contributions on Sep 8" width="100%" /></picture></p>
 
@@ -65,13 +65,13 @@ I started out building a Discord bot that grew to 2.7M+ users, which pulled me d
 <summary><b>More GitHub stats</b>: 12-month activity, when I code, rank and languages</summary>
 <br />
 
-<p align="center"><picture><source media="(prefers-color-scheme: light)" srcset="assets/contributions-light.svg"><img src="assets/contributions.svg" alt="Contribution activity over the last 12 months: 3,581 contributions, best week 576" width="100%" /></picture></p>
+<p align="center"><picture><source media="(prefers-color-scheme: light)" srcset="assets/contributions-light.svg"><img src="assets/contributions.svg" alt="Contribution activity over the last 12 months: 3,611 contributions, best week 626" width="100%" /></picture></p>
 
-<p align="center"><picture><source media="(prefers-color-scheme: light)" srcset="assets/rhythm-light.svg"><img src="assets/rhythm.svg" alt="When I code, from 2,400 commits over the last 12 months: Evening coder, peaks at 6 PM · busiest on Saturdays" width="100%" /></picture></p>
+<p align="center"><picture><source media="(prefers-color-scheme: light)" srcset="assets/rhythm-light.svg"><img src="assets/rhythm.svg" alt="When I code, from 2,419 commits over the last 12 months: Evening coder, peaks at 6 PM · busiest on Saturdays" width="100%" /></picture></p>
 
 <p align="center">
-  <picture><source media="(prefers-color-scheme: light)" srcset="assets/github-activity-light.svg"><img src="assets/github-activity.svg" alt="GitHub activity, all time: 4,251 commits, 538 pull requests, 629 issues, 30 code reviews, 5 stars earned, 64 repositories. Rank A-, top 35%" width="49%" /></picture>
-  <picture><source media="(prefers-color-scheme: light)" srcset="assets/languages-light.svg"><img src="assets/languages.svg" alt="Most used languages: TypeScript 62.8%, JavaScript 16.6%, Python 6.5%, PLpgSQL 4.4%, HTML 4.1%, Lua 2.2%, CSS 2.1%, Shell 1.3%" width="49%" /></picture>
+  <picture><source media="(prefers-color-scheme: light)" srcset="assets/github-activity-light.svg"><img src="assets/github-activity.svg" alt="GitHub activity, all time: 4,270 commits, 546 pull requests, 632 issues, 30 code reviews, 5 stars earned, 64 repositories. Rank A-, top 35%" width="49%" /></picture>
+  <picture><source media="(prefers-color-scheme: light)" srcset="assets/languages-light.svg"><img src="assets/languages.svg" alt="Most used languages: TypeScript 62.4%, JavaScript 16.9%, Python 6.7%, PLpgSQL 4.3%, HTML 4.1%, Lua 2.2%, CSS 2.1%, Shell 1.3%" width="49%" /></picture>
 </p>
 
 </details>
