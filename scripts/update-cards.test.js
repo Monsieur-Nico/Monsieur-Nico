@@ -22,6 +22,7 @@ const {
   assertNoDrop,
   recentRepos,
   renderRecentSvg,
+  contributionsFeed,
 } = require("./update-cards");
 
 const repo = (langs) => ({
@@ -402,4 +403,22 @@ test("assertPrivateVisible throws when the token can only see public repos", () 
 
 test("assertPrivateVisible passes when at least one private repo is visible", () => {
   assert.doesNotThrow(() => assertPrivateVisible([{ isPrivate: false }, { isPrivate: true }]));
+});
+
+test("contributionsFeed keeps the last 371 days in order, with the current streak", () => {
+  const year = daysEndingNov23(400, 3);
+  const feed = contributionsFeed(year, { start: "2026-11-20", end: "2026-11-23" }, new Date("2026-11-24T05:15:00Z"));
+
+  assert.equal(feed.updated, "2026-11-24T05:15:00.000Z");
+  assert.deepEqual(feed.streak, { start: "2026-11-20", end: "2026-11-23" });
+  assert.equal(feed.days.length, 371);
+  assert.deepEqual(feed.days[0], year[29]);
+  assert.deepEqual(feed.days.at(-1), { date: "2026-11-23", count: 3 });
+});
+
+test("contributionsFeed reports no streak as nulls and keeps short histories whole", () => {
+  const feed = contributionsFeed(days(0, 2, 0), NO_STREAK_FOR_TEST, new Date("2026-11-04T00:00:00Z"));
+
+  assert.deepEqual(feed.streak, { start: null, end: null });
+  assert.deepEqual(feed.days, days(0, 2, 0));
 });

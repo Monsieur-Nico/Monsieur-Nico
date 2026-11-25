@@ -759,6 +759,18 @@ function renderRecentSvg(repos, thisYear) {
   });
 }
 
+// The daily data behind the skyline, for the portfolio site (nicoscript.com) to
+// draw its own version. `days` is sorted oldest first and ends today.
+const FEED_DAYS = 371;
+
+function contributionsFeed(days, current, now) {
+  return {
+    updated: now.toISOString(),
+    streak: { start: current.start, end: current.end },
+    days: days.slice(-FEED_DAYS).map(({ date, count }) => ({ date, count })),
+  };
+}
+
 function setAlt(readme, file, alt) {
   const escaped = file.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const pattern = new RegExp(`(<img src="assets/${escaped}" alt=")[^"]*(")`);
@@ -793,6 +805,8 @@ if (require.main === module) {
   }
   fs.writeFileSync(README_PATH, themeReadme(readme, cards.map(([file]) => file)));
   fs.writeFileSync(statsPath, `${JSON.stringify(totals, null, 2)}\n`);
+  const feed = contributionsFeed(days, streak.current, now);
+  fs.writeFileSync(path.join(ASSETS, "contributions.json"), `${JSON.stringify(feed)}\n`);
   console.log(cards.map(([file]) => file).join(", "));
 }
 
@@ -818,4 +832,5 @@ module.exports = {
   assertNoDrop,
   recentRepos,
   renderRecentSvg,
+  contributionsFeed,
 };
