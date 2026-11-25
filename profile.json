@@ -1,0 +1,223 @@
+{
+  "name": "Nicolas Alkhoury",
+  "role": "Full-Stack Developer • AI Toolmaker",
+  "tagline": "Web apps end to end — front end, back end, and the AI in between.",
+  "location": "Ottawa, Canada",
+  "availability": "Available for projects",
+  "email": "info@nicoscript.com",
+  "buttons": [
+    {
+      "file": "btn-portfolio.svg",
+      "label": "Portfolio",
+      "icon": "globe",
+      "primary": true
+    },
+    {
+      "file": "btn-linkedin.svg",
+      "label": "LinkedIn",
+      "icon": "linkedin"
+    },
+    {
+      "file": "btn-email.svg",
+      "label": "Email me",
+      "icon": "mail"
+    }
+  ],
+  "numbers": [
+    {
+      "icon": "users",
+      "value": "2.7M+",
+      "label": "Discord bot users"
+    },
+    {
+      "icon": "folder",
+      "value": "50+",
+      "label": "projects shipped"
+    },
+    {
+      "icon": "briefcase",
+      "value": "4+ yrs",
+      "label": "running NicoScript"
+    },
+    {
+      "icon": "code",
+      "value": "7 yrs",
+      "label": "building software"
+    }
+  ],
+  "about": {
+    "headline": "Self-taught full-stack developer based in Ottawa, Canada.",
+    "lines": [
+      "I design and ship web apps end to end: front end, back end,",
+      "and the AI automation in between."
+    ]
+  },
+  "lists": [
+    {
+      "file": "card-audience.svg",
+      "icon": "users",
+      "title": "Who I build for",
+      "kicker": "AUDIENCE",
+      "items": [
+        "Devs & designers who want smart automation",
+        "Content creators & educators",
+        "Small businesses looking to scale",
+        "My own curiosity and future independence"
+      ]
+    },
+    {
+      "file": "card-principles.svg",
+      "icon": "code",
+      "title": "How I work",
+      "kicker": "PRINCIPLES",
+      "items": [
+        "Clarity over cleverness",
+        "Test early, refactor often",
+        "Build with purpose, not hype",
+        "Always be learning"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "file": "card-nicoscript-sites.svg",
+      "icon": "layers",
+      "name": "NicoScript Sites",
+      "status": "IN DEVELOPMENT",
+      "badge": "MAIN FOCUS",
+      "lines": [
+        "Local business websites with a client-editable",
+        "dashboard, built and managed on one platform."
+      ],
+      "tags": [
+        "Private",
+        "TypeScript"
+      ]
+    },
+    {
+      "file": "card-toolfurnace.svg",
+      "icon": "zap",
+      "name": "ToolFurnace",
+      "status": "LIVE",
+      "lines": [
+        "Automated, SEO-optimized AI tools aggregator",
+        "built for passive organic growth."
+      ],
+      "tags": [
+        "AI",
+        "SEO",
+        "Automation"
+      ],
+      "link": "toolfurnace.com"
+    },
+    {
+      "file": "card-textconvert.svg",
+      "icon": "code",
+      "name": "textConvert",
+      "status": "OPEN SOURCE",
+      "lines": [
+        "Dependency-free TypeScript text utilities: PII",
+        "redaction, case conversion, validation, analysis."
+      ],
+      "tags": [
+        "TypeScript",
+        "Zero dependencies"
+      ],
+      "link": "View on GitHub"
+    },
+    {
+      "file": "card-self-education.svg",
+      "icon": "folder",
+      "name": "Self-Education in CS",
+      "status": "OPEN SOURCE",
+      "lines": [
+        "A low-cost, self-paced program to learn",
+        "computer science course by course."
+      ],
+      "tags": [
+        "Curriculum",
+        "Self-paced"
+      ],
+      "link": "View on GitHub"
+    }
+  ],
+  "stack": [
+    [
+      "FRONTEND",
+      [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "JavaScript",
+        "TailwindCSS"
+      ]
+    ],
+    [
+      "BACKEND",
+      [
+        "Node.js",
+        "Express"
+      ]
+    ],
+    [
+      "DATA",
+      [
+        "PostgreSQL",
+        "MongoDB"
+      ]
+    ],
+    [
+      "TOOLING",
+      [
+        "Git",
+        "VS Code",
+        "ESLint",
+        "Jest",
+        "Cypress",
+        "Storybook"
+      ]
+    ],
+    [
+      "AI",
+      [
+        "AI APIs",
+        "Automation pipelines"
+      ]
+    ]
+  ],
+  "experience": [
+    {
+      "when": "2022 – Present",
+      "role": "Owner & Developer",
+      "org": "NicoScript",
+      "lines": [
+        "Design and build custom web apps, UI/UX, and performance-tuned sites",
+        "for clients. 50+ projects shipped."
+      ]
+    },
+    {
+      "when": "2021 – 2022",
+      "role": "Web Developer",
+      "org": "Lighthouse Labs",
+      "lines": [
+        "Completed a 12-week intensive full-stack program covering data",
+        "modelling, testing, and software architecture."
+      ]
+    },
+    {
+      "when": "2019 – 2022",
+      "role": "Owner & Developer",
+      "org": "Rok Commander",
+      "lines": [
+        "Built and ran a Discord bot that grew to 2.7M+ users. Owned support,",
+        "roadmap, and UX end to end."
+      ]
+    }
+  ],
+  "goals": [
+    "Launch NicoScript Sites and onboard the first clients",
+    "Grow ToolFurnace into a self-sustaining traffic engine",
+    "Go deeper on API security and AI-driven automation pipelines",
+    "Grow NicoScript's client base and my personal brand"
+  ]
+}

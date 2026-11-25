@@ -121,3 +121,13 @@ test("buttons shine and nudge their arrow", () => {
   assert.match(svg, /class="shine-s"/);
   assert.match(svg, /class="nudge"[^>]*>→</);
 });
+
+test("profile.json holds the profile, with the fields the portfolio reads", () => {
+  const file = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "profile.json"), "utf8"));
+
+  assert.deepEqual(file, PROFILE);
+  for (const field of ["name", "role", "tagline", "location", "email"]) {
+    assert.equal(typeof file[field], "string", `${field} should be a string`);
+  }
+  assert.ok(file.availability === null || typeof file.availability === "string");
+});
