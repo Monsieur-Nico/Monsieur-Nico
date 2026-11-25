@@ -57,7 +57,7 @@ I started out building a Discord bot that grew to 2.7M+ users, which pulled me d
 
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/white/bar-chart.svg"><img src="assets/icons/black/bar-chart.svg" width="22" height="22" align="absmiddle" alt="" /></picture>&nbsp; GitHub Stats
 
-<p align="center"><picture><source media="(prefers-color-scheme: light)" srcset="assets/streak-light.svg"><img src="assets/streak.svg" alt="GitHub contribution streak: 5,560 contributions since 2020, current streak 86 days (Aug 31 – Nov 24), longest streak 86 days (Aug 31 – Nov 24)" width="100%" /></picture></p>
+<p align="center"><picture><source media="(prefers-color-scheme: light)" srcset="assets/streak-light.svg"><img src="assets/streak.svg" alt="GitHub contribution streak: 5,663 contributions since 2020, current streak 87 days (Aug 31 – Nov 25), longest streak 87 days (Aug 31 – Nov 25)" width="100%" /></picture></p>
 
 <p align="center"><picture><source media="(prefers-color-scheme: light)" srcset="assets/skyline-light.svg"><img src="assets/skyline.svg" alt="Contribution skyline, one building per day over the last 12 months. Best day: 155 contributions on Sep 8" width="100%" /></picture></p>
 
@@ -65,13 +65,13 @@ I started out building a Discord bot that grew to 2.7M+ users, which pulled me d
 <summary><b>More GitHub stats</b>: 12-month activity, when I code, rank and languages</summary>
 <br />
 
-<p align="center"><picture><source media="(prefers-color-scheme: light)" srcset="assets/contributions-light.svg"><img src="assets/contributions.svg" alt="Contribution activity over the last 12 months: 3,611 contributions, best week 626" width="100%" /></picture></p>
+<p align="center"><picture><source media="(prefers-color-scheme: light)" srcset="assets/contributions-light.svg"><img src="assets/contributions.svg" alt="Contribution activity over the last 12 months: 3,714 contributions, best week 640" width="100%" /></picture></p>
 
-<p align="center"><picture><source media="(prefers-color-scheme: light)" srcset="assets/rhythm-light.svg"><img src="assets/rhythm.svg" alt="When I code, from 2,419 commits over the last 12 months: Evening coder, peaks at 6 PM · busiest on Saturdays" width="100%" /></picture></p>
+<p align="center"><picture><source media="(prefers-color-scheme: light)" srcset="assets/rhythm-light.svg"><img src="assets/rhythm.svg" alt="When I code, from 2,468 commits over the last 12 months: Evening coder, peaks at 6 PM · busiest on Saturdays" width="100%" /></picture></p>
 
 <p align="center">
-  <picture><source media="(prefers-color-scheme: light)" srcset="assets/github-activity-light.svg"><img src="assets/github-activity.svg" alt="GitHub activity, all time: 4,270 commits, 546 pull requests, 632 issues, 30 code reviews, 5 stars earned, 64 repositories. Rank A-, top 35%" width="49%" /></picture>
-  <picture><source media="(prefers-color-scheme: light)" srcset="assets/languages-light.svg"><img src="assets/languages.svg" alt="Most used languages: TypeScript 62.4%, JavaScript 16.9%, Python 6.7%, PLpgSQL 4.3%, HTML 4.1%, Lua 2.2%, CSS 2.1%, Shell 1.3%" width="49%" /></picture>
+  <picture><source media="(prefers-color-scheme: light)" srcset="assets/github-activity-light.svg"><img src="assets/github-activity.svg" alt="GitHub activity, all time: 4,319 commits, 562 pull requests, 670 issues, 30 code reviews, 5 stars earned, 64 repositories. Rank A-, top 35%" width="49%" /></picture>
+  <picture><source media="(prefers-color-scheme: light)" srcset="assets/languages-light.svg"><img src="assets/languages.svg" alt="Most used languages: TypeScript 62.4%, JavaScript 16.8%, Python 6.9%, PLpgSQL 4.3%, HTML 4.1%, Lua 2.2%, CSS 2.0%, Shell 1.3%" width="49%" /></picture>
 </p>
 
 </details>

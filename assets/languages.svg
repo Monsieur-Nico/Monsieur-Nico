@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 590 274" width="590" height="274" role="img" aria-label="Most used languages: TypeScript 62.4%, JavaScript 16.9%, Python 6.7%, PLpgSQL 4.3%, HTML 4.1%, Lua 2.2%, CSS 2.1%, Shell 1.3%">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 590 274" width="590" height="274" role="img" aria-label="Most used languages: TypeScript 62.4%, JavaScript 16.8%, Python 6.9%, PLpgSQL 4.3%, HTML 4.1%, Lua 2.2%, CSS 2.0%, Shell 1.3%">
   <title>Most used languages</title>
   <defs>
     <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
@@ -61,12 +61,12 @@
   <text x="90" y="49" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="21" font-weight="700" fill="#FFFFFF">Most used languages</text>
   <text x="90" y="68" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#8E8E8E">BY CODE SIZE</text>
   <line x1="28" x2="562" y1="92" y2="92" stroke="#ffffff" stroke-opacity="0.08"/>
-  <path class="segment" style="animation-delay:150ms" d="M125.75 112.02 A70 70 0 1 1 76.05 233.00 L90.12 218.77 A50 50 0 1 0 125.75 132.03 Z" fill="#FFFFFF"/>
-  <path class="segment" style="animation-delay:290ms" d="M73.56 230.54 A70 70 0 0 1 56.09 165.03 L75.37 170.36 A50 50 0 0 0 87.63 216.31 Z" fill="#E5E5E5"/>
-  <path class="segment" style="animation-delay:430ms" d="M57.02 161.65 A70 70 0 0 1 69.02 138.67 L84.42 151.45 A50 50 0 0 0 76.31 166.99 Z" fill="#D1D1D1"/>
-  <path class="segment" style="animation-delay:570ms" d="M71.26 135.98 A70 70 0 0 1 82.68 125.50 L94.08 141.94 A50 50 0 0 0 86.66 148.75 Z" fill="#B4B4B4"/>
-  <path class="segment" style="animation-delay:710ms" d="M85.55 123.50 A70 70 0 0 1 98.43 116.84 L105.27 135.64 A50 50 0 0 0 96.96 139.94 Z" fill="#A1A1A1"/>
-  <path class="segment" style="animation-delay:850ms" d="M101.72 115.64 A70 70 0 0 1 122.25 112.02 L122.25 132.03 A50 50 0 0 0 108.56 134.44 Z" fill="#6E6E6E"/>
+  <path class="segment" style="animation-delay:150ms" d="M125.75 112.02 A70 70 0 1 1 76.17 233.11 L90.20 218.84 A50 50 0 1 0 125.75 132.03 Z" fill="#FFFFFF"/>
+  <path class="segment" style="animation-delay:290ms" d="M73.67 230.65 A70 70 0 0 1 55.96 165.56 L75.28 170.74 A50 50 0 0 0 87.71 216.39 Z" fill="#E5E5E5"/>
+  <path class="segment" style="animation-delay:430ms" d="M56.86 162.18 A70 70 0 0 1 69.19 138.45 L84.54 151.29 A50 50 0 0 0 76.19 167.37 Z" fill="#D1D1D1"/>
+  <path class="segment" style="animation-delay:570ms" d="M71.44 135.77 A70 70 0 0 1 82.83 125.39 L94.19 141.86 A50 50 0 0 0 86.79 148.60 Z" fill="#B4B4B4"/>
+  <path class="segment" style="animation-delay:710ms" d="M85.71 123.40 A70 70 0 0 1 98.52 116.80 L105.34 135.61 A50 50 0 0 0 97.07 139.87 Z" fill="#A1A1A1"/>
+  <path class="segment" style="animation-delay:850ms" d="M101.81 115.61 A70 70 0 0 1 122.25 112.02 L122.25 132.03 A50 50 0 0 0 108.63 134.42 Z" fill="#6E6E6E"/>
   <text class="pop" style="animation-delay:1200ms" x="124" y="188" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="24" font-weight="800" fill="url(#num)">62%</text>
   <text class="fade" style="animation-delay:1300ms" x="124" y="206" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11.5" fill="#8E8E8E">TypeScript</text>
   <g class="rise" style="animation-delay:200ms">
@@ -75,11 +75,11 @@
   </g>
   <g class="rise" style="animation-delay:290ms">
     <rect class="swatch" x="240" y="158" width="11" height="11" rx="3" fill="#E5E5E5"/>
-    <text x="259" y="168" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14.5" fill="#D1D1D1">JavaScript <tspan fill="#8E8E8E">16.9%</tspan></text>
+    <text x="259" y="168" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14.5" fill="#D1D1D1">JavaScript <tspan fill="#8E8E8E">16.8%</tspan></text>
   </g>
   <g class="rise" style="animation-delay:380ms">
     <rect class="swatch" x="240" y="192" width="11" height="11" rx="3" fill="#D1D1D1"/>
-    <text x="259" y="202" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14.5" fill="#D1D1D1">Python <tspan fill="#8E8E8E">6.7%</tspan></text>
+    <text x="259" y="202" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14.5" fill="#D1D1D1">Python <tspan fill="#8E8E8E">6.9%</tspan></text>
   </g>
   <g class="rise" style="animation-delay:470ms">
     <rect class="swatch" x="240" y="226" width="11" height="11" rx="3" fill="#B4B4B4"/>
@@ -95,7 +95,7 @@
   </g>
   <g class="rise" style="animation-delay:740ms">
     <rect class="swatch" x="408" y="192" width="11" height="11" rx="3" fill="#6E6E6E"/>
-    <text x="427" y="202" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14.5" fill="#D1D1D1">CSS <tspan fill="#8E8E8E">2.1%</tspan></text>
+    <text x="427" y="202" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="14.5" fill="#D1D1D1">CSS <tspan fill="#8E8E8E">2.0%</tspan></text>
   </g>
   <g class="rise" style="animation-delay:830ms">
     <rect class="swatch" x="408" y="226" width="11" height="11" rx="3" fill="#6E6E6E"/>
