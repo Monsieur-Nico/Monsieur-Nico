@@ -61,12 +61,12 @@
   <text x="90" y="49" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="21" font-weight="700" fill="#FFFFFF">Most used languages</text>
   <text x="90" y="68" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#8E8E8E">BY CODE SIZE</text>
   <line x1="28" x2="562" y1="92" y2="92" stroke="#ffffff" stroke-opacity="0.08"/>
-  <path class="segment" style="animation-delay:150ms" d="M125.75 112.02 A70 70 0 1 1 76.17 233.11 L90.20 218.84 A50 50 0 1 0 125.75 132.03 Z" fill="#FFFFFF"/>
-  <path class="segment" style="animation-delay:290ms" d="M73.67 230.65 A70 70 0 0 1 55.96 165.56 L75.28 170.74 A50 50 0 0 0 87.71 216.39 Z" fill="#E5E5E5"/>
-  <path class="segment" style="animation-delay:430ms" d="M56.86 162.18 A70 70 0 0 1 69.19 138.45 L84.54 151.29 A50 50 0 0 0 76.19 167.37 Z" fill="#D1D1D1"/>
-  <path class="segment" style="animation-delay:570ms" d="M71.44 135.77 A70 70 0 0 1 82.83 125.39 L94.19 141.86 A50 50 0 0 0 86.79 148.60 Z" fill="#B4B4B4"/>
-  <path class="segment" style="animation-delay:710ms" d="M85.71 123.40 A70 70 0 0 1 98.52 116.80 L105.34 135.61 A50 50 0 0 0 97.07 139.87 Z" fill="#A1A1A1"/>
-  <path class="segment" style="animation-delay:850ms" d="M101.81 115.61 A70 70 0 0 1 122.25 112.02 L122.25 132.03 A50 50 0 0 0 108.63 134.42 Z" fill="#6E6E6E"/>
+  <path class="segment" style="animation-delay:150ms" d="M125.75 112.02 A70 70 0 1 1 76.18 233.12 L90.21 218.85 A50 50 0 1 0 125.75 132.03 Z" fill="#FFFFFF"/>
+  <path class="segment" style="animation-delay:290ms" d="M73.68 230.66 A70 70 0 0 1 55.95 165.61 L75.28 170.78 A50 50 0 0 0 87.71 216.40 Z" fill="#E5E5E5"/>
+  <path class="segment" style="animation-delay:430ms" d="M56.85 162.23 A70 70 0 0 1 69.21 138.43 L84.56 151.27 A50 50 0 0 0 76.18 167.40 Z" fill="#D1D1D1"/>
+  <path class="segment" style="animation-delay:570ms" d="M71.46 135.75 A70 70 0 0 1 82.84 125.38 L94.20 141.85 A50 50 0 0 0 86.80 148.59 Z" fill="#B4B4B4"/>
+  <path class="segment" style="animation-delay:710ms" d="M85.72 123.39 A70 70 0 0 1 98.53 116.80 L105.34 135.61 A50 50 0 0 0 97.08 139.87 Z" fill="#A1A1A1"/>
+  <path class="segment" style="animation-delay:850ms" d="M101.82 115.61 A70 70 0 0 1 122.25 112.02 L122.25 132.03 A50 50 0 0 0 108.64 134.42 Z" fill="#6E6E6E"/>
   <text class="pop" style="animation-delay:1200ms" x="124" y="188" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="24" font-weight="800" fill="url(#num)">62%</text>
   <text class="fade" style="animation-delay:1300ms" x="124" y="206" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11.5" fill="#8E8E8E">TypeScript</text>
   <g class="rise" style="animation-delay:200ms">
