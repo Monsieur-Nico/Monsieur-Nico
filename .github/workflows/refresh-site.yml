@@ -1,0 +1,48 @@
+name: Refresh the site
+
+# nicoscript.com reads profile.json. This tells it to read the file again as soon
+# as it changes, instead of at the next daily refresh.
+on:
+  push:
+    branches: [main]
+    paths: [profile.json]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: refresh-site
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+
+      # raw.githubusercontent.com caches files for up to five minutes. Refreshing
+      # before it serves the new file would cache the old one again.
+      - name: Wait until the new profile.json is served
+        run: |
+          for attempt in $(seq 1 24); do
+            if curl -fsS --max-time 10 \
+              https://raw.githubusercontent.com/Monsieur-Nico/Monsieur-Nico/main/profile.json \
+              | cmp -s - profile.json; then
+              exit 0
+            fi
+            sleep 30
+          done
+          echo "raw.githubusercontent.com still serves an older profile.json" >&2
+          exit 1
+
+      - name: Refresh the profile on nicoscript.com
+        env:
+          REVALIDATE_SECRET: ${{ secrets.REVALIDATE_SECRET }}
+        run: |
+          curl --fail-with-body -sS --max-time 30 \
+            -X POST https://www.nicoscript.com/api/revalidate \
+            -H "Authorization: Bearer $REVALIDATE_SECRET" \
+            -H "Content-Type: application/json" \
+            -d '{"tag":"profile"}'
